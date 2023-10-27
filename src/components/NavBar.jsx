@@ -52,8 +52,10 @@ const Navbar = () => {
 								}}
 							>
 								<div className="">
-									<span className="text-3xl font-bold">Kelechukwu</span>
-									<span className="hidden md:inline-block text-xl font-bold">
+									<span className="text-3xl transition ease-in-out duration-500 font-bold inline-block text-text-main fluid-4xl hover:-translate-y-1">
+										Kelechukwu
+									</span>
+									<span className="hidden lg:inline-block text-xl font-bold transition ease-in-out duration-500 text-text-main fluid-4xl hover:-translate-y-1">
 										Ikechukwu
 									</span>
 								</div>
@@ -85,10 +87,10 @@ const Navbar = () => {
 							className="md:flex"
 						>
 							{navLinks.map(({ link, name }) => (
-								<div key={name} className="mx-2">
+								<div key={name} className="hover:border-b border-b-white mx-2">
 									<Link
 										href={link}
-										className={`md:px-4 my-5 md:my-0 md:text-xl hover:border-b border-b-white transition ease-in-out duration-500 ${
+										className={`md:px-4 my-5 md:my-0 md:text-xl inline-block text-text-main fluid-4xl hover:-translate-y-1 transition duration-300 ${
 											pathname.startsWith(link) ? "" : ""
 										}`}
 									>
