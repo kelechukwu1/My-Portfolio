@@ -43,7 +43,7 @@ const spanLabelClass = `
 const ContactForm = () => {
 	// const router = useRouter();
 
-	const formRef = useRef<HTMLFormElement>(null);
+	const formRef = useRef(null);
 	const [isSending, setIsSending] = useState(false);
 	const [errorMsg, setErrorMsg] = useState("");
 
