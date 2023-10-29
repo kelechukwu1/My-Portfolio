@@ -1,6 +1,7 @@
 import Head from "next/head";
 import AboutFew from "@/components/AboutFew";
 import Greeting from "@/components/Greeting";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
 	return (
@@ -26,8 +27,11 @@ export default function Home() {
 				<meta property="og:url" content="https://kelechukwu.vercel.app" />
 				<meta property="og:type" content="website" />
 			</Head>
-			<Greeting />
-			<AboutFew />
+			<main className="mx-4 md:mx-24">
+				<Greeting />
+				<AboutFew />
+				<ContactForm />
+			</main>
 		</>
 	);
 }
