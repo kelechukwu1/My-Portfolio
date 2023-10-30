@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Footer = () => {
 	return (
-		<div className="md:flex md:justify-between px-4 md:px-20 py-8 space-y-3 lg:space-y-0">
+		<div className="md:flex md:justify-between px-4 md:mt-10 md:px-20 py-8 space-y-3 lg:space-y-0">
 			<div className="lg:flex text-center justify-center md:mb-0">
 				<div className="lg:hidden">Designed & Developed by </div>
 				<div className="lg:hidden"> Kelechukwu Ikechukwu</div>

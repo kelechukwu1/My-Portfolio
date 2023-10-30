@@ -13,7 +13,7 @@ const MySwal = withReactContent(Swal);
 const inputClass = `
       peer 
       w-full 
-      border-b 
+      border-b
       bg-black/0 
       pr-2 pb-2  
       text-2xl 
@@ -113,12 +113,16 @@ const ContactForm = () => {
 	};
 
 	return (
-		<form ref={formRef} onSubmit={submitForm} className="flex flex-col gap-12">
+		<form
+			ref={formRef}
+			onSubmit={submitForm}
+			className="flex flex-col gap-12 pt-16 md:pt-0"
+		>
 			<label htmlFor="name" className="relative text-text-main">
 				<input
 					type="text"
 					id="name"
-					placeholder=" "
+					placeholder=""
 					required
 					className={inputClass}
 				/>

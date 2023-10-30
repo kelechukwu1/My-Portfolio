@@ -24,11 +24,11 @@ const Contact = () => {
 	));
 
 	return (
-		<Section className="pb-12 mx-4 md:mx-24 h-full md:py-24 flex items-center">
+		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center">
 			<main className="flex gap-16">
-				<div className="flex w-full flex-col gap-12">
+				<div className="flex w-full flex-col md:gap-12">
 					<header
-						className="flex flex-col items-center           
+						className="flex flex-col items-center
             gap-2
             text-center
             md:items-start
@@ -38,9 +38,10 @@ const Contact = () => {
 							className="justify-center text-3xl md:text-4xl lg:text-5xl"
 							text="Get In Touch!"
 						/>
-						<h1 className="text-muted-main fluid-lg ">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Cupiditate, consectetur!
+						<h1 className="px-5 md:px-0 text-muted-main fluid-lg ">
+							I’m currently open to joining a new team of creative developers.
+							Also, if you have a question, proposal, idea or just want to say
+							hi, Go ahead.
 						</h1>
 					</header>
 					<ContactForm />

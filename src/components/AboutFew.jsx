@@ -18,7 +18,7 @@ import SpringyText from "./springy-text/SpringyText";
 const AboutFew = () => {
 	return (
 		<>
-			<div className="h-full md:py-24 flex items-center">
+			<div className="h-full px-4 md:px-24 md:py-24 flex items-center">
 				<div className="md:grid md:grid-cols-2 md:gap-4 md:justify-between items-center">
 					<div className="mt-5 md:mt-0">
 						<div className="mb-8 text-3xl md:text-4xl lg:text-5xl font-black text-center md:text-start">
