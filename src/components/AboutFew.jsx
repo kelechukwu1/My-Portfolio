@@ -53,7 +53,7 @@ const AboutFew = () => {
 								<SpringyText text="A Little About Me" />
 							</div>
 
-							<div className="text-center mb-8 lg:text-start md:text-[1.1rem] text-muted-main fluid-lg">
+							<div className="text-center mb-8 lg:text-start text-xl md:text-[1.1rem] text-muted-main fluid-lg">
 								Focused on building awesome and high-quality websites that are
 								also visually appealing and easy to use. I have a strong
 								foundation in HTML, CSS, and JavaScript, and I'm proficient in

@@ -10,22 +10,22 @@ const Footer = () => {
 	const socials = [
 		{
 			name: "Twitter",
-			icon: <AiOutlineTwitter className="w-8 h-8" />,
+			icon: <AiOutlineTwitter className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 		{
 			name: "LinkedIn",
-			icon: <AiOutlineLinkedin className="w-8 h-8" />,
+			icon: <AiOutlineLinkedin className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 		{
 			name: "Github",
-			icon: <AiOutlineGithub className="w-8 h-8" />,
+			icon: <AiOutlineGithub className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "https://github.com/kelechukwu1",
 		},
 		{
 			name: "WhatsApp",
-			icon: <AiOutlineWhatsApp className="w-8 h-8" />,
+			icon: <AiOutlineWhatsApp className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 	];
@@ -39,7 +39,7 @@ const Footer = () => {
 					Designed & Developed by Kelechukwu Ikechukwu
 				</div>
 			</div>
-			<div className="flex justify-center text-center md:space-x-5">
+			<div className="flex justify-center text-center md:space-x-5 mt-5 md:mt-0">
 				{socials.map((item, index) => (
 					<div
 						key={index}
