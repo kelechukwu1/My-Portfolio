@@ -18,65 +18,69 @@ import SpringyText from "./springy-text/SpringyText";
 const AboutFew = () => {
 	return (
 		<>
-			<div className="h-full px-4 md:px-24 md:py-24 flex items-center">
-				<div className="md:grid md:grid-cols-2 md:gap-4 md:justify-between items-center">
-					<div className="mt-5 md:mt-0">
-						<div className="mb-8 text-3xl md:text-4xl lg:text-5xl font-black text-center md:text-start">
-							<SpringyText
-								className="justify-center"
-								text="A Little About Me"
-							/>
-						</div>
-
-						<div className="text-center mb-8 md:text-start md:text-[1.1rem] text-muted-main fluid-lg">
-							Focused on building awesome and high-quality websites that are
-							also visually appealing and easy to use. I have a strong
-							foundation in HTML, CSS, and JavaScript, and I'm proficient in
-							using React. I love learning something new and I'm always looking
-							to improve my skills and stay up-to-date on the latest front-end
-							technologies.
-						</div>
-						<div className="flex justify-center mb-8 md:justify-start">
-							<Link href={"/about"}>
-								<button className="text-center px-12 py-6 rounded-full bg-stone-800 hover:bg-blue-700 transition duration-500">
-									More About Me
-								</button>
-							</Link>
-						</div>
-					</div>
-					<div className="mt-10 md:hidden">
+			<div className="h-full px-4 md:px-24 md:pb-24 lg:py-2 flex items-center">
+				<div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:justify-between">
+					<div className="flex justify-center mt-10 md:mt-0 lg:hidden">
 						<Image
-							src={"/setup.jpg"}
-							width={400}
-							height={400}
+							src={"/KC.jpeg"}
+							width={350}
+							height={200}
 							alt="setup-image"
-							className="w-auto h-auto rounded-3xl"
+							className="w-auto h-auto rounded-md"
 						/>
 					</div>
-					<div className="hidden md:block">
+					<div className="lg:mt-[9rem] xl:mt-[15rem]">
+						<div className="text-gray-300 hidden lg:block">
+							<div className="flex text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
+								<SpringyText text="Kelechukwu I.O" />
+							</div>
+							<div className="text-xl flex mt-5 justify-center text-center lg:text-start">
+								I'm a creative Frontend Developer passionate about converting
+								ideas into standard and scalable products.
+							</div>
+
+							<div className="hidden lg:block mt-8 lg:justify-start">
+								<Link href={"/about"}>
+									<button className="text-center px-12 py-6 rounded-full bg-stone-800 hover:bg-blue-700 transition duration-500">
+										More About Me
+									</button>
+								</Link>
+							</div>
+						</div>
+
+						<div className="lg:hidden mt-20 lg:mt-0 justify-center lg:justify-start">
+							<div className="flex justify-center mb-8 text-3xl md:text-4xl lg:text-5xl font-black text-center lg:text-start">
+								<SpringyText text="A Little About Me" />
+							</div>
+
+							<div className="text-center mb-8 lg:text-start md:text-[1.1rem] text-muted-main fluid-lg">
+								Focused on building awesome and high-quality websites that are
+								also visually appealing and easy to use. I have a strong
+								foundation in HTML, CSS, and JavaScript, and I'm proficient in
+								using React. I love learning something new and I'm always
+								looking to improve my skills and stay up-to-date on the latest
+								front-end technologies.
+							</div>
+							<div className="flex justify-center mb-8 lg:justify-start">
+								<Link href={"/about"}>
+									<button className="text-center px-12 py-6 rounded-full bg-stone-800 hover:bg-blue-700 transition duration-500">
+										More About Me
+									</button>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="hidden lg:block">
 						<Image
-							src={"/setup.jpg"}
-							width={500}
-							height={500}
+							src={"/KC.jpeg"}
+							width={600}
+							height={100}
 							alt="setup-image"
-							className="w-[80rem] h-[20rem] rounded-3xl"
+							className="rounded-xl"
 						/>
 					</div>
 				</div>
-				{/* <motion.div
-					initial={{ scale: 0, opacity: 0 }}
-					whileInView={{ scale: 1, opacity: 1 }}
-					className="
-            hidden 
-            w-3/4
-            max-w-full
-            md:block  
-          "
-					viewport={{ once: true }}
-					transition={{ type: "spring", mass: 0.2 }}
-				>
-					<Lottie options={defaultOptions} />
-				</motion.div> */}
 			</div>
 		</>
 	);

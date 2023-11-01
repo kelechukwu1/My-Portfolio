@@ -22,6 +22,7 @@ const SpringyLetter = ({ letter }: SpringyLetterProps) => {
 				"scale(1.2,.6)",
 				"scale(.7,1.3)",
 				"scale(1.2,.8)",
+				// "scale(1.2,.1)",
 				"scale(.8,1.2)",
 				"scale(1,1)",
 			],

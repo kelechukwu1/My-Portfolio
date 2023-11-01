@@ -3,15 +3,13 @@ import SpringyText from "./springy-text/SpringyText";
 
 const Greeting = () => {
 	return (
-		<div className="px-4 md:px-24 my-5 md:my-10 text-gray-300">
-			<div className="text-2xl md:text-4xl font-black">
-				<SpringyText
-					className="justify-center"
-					text="I'm Kelechukwu Ikechukwu"
-				/>
+		<div className="px-4 md:px-24 my-5 md:my-10 text-gray-300 lg:hidden">
+			<div className="flex text-center justify-center lg:justify-start text-2xl md:text-4xl font-black">
+				<SpringyText text="Kelechukwu Ikechukwu O." />
 			</div>
-			<div className="text-xl flex justify-center md:justify-start">
-				A Frontend Engineer
+			<div className="text-xl flex mt-5 justify-center text-center md:px-20">
+				I'm a creative Frontend Developer passionate about converting ideas into
+				standard and scalable products.
 			</div>
 		</div>
 	);

@@ -2,6 +2,8 @@ import Head from "next/head";
 import AboutFew from "@/components/AboutFew";
 import Greeting from "@/components/Greeting";
 import Contact from "./contact/page";
+import ProjectCard from "@/components/ProjectCard";
+import Projects from "./projects/page";
 
 export default function Home() {
 	return (
@@ -30,6 +32,7 @@ export default function Home() {
 
 			<Greeting />
 			<AboutFew />
+			<Projects />
 			<Contact />
 		</>
 	);

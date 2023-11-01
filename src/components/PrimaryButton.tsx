@@ -20,7 +20,7 @@ const PrimaryButton = ({
 
 	const getBtnTypeClass = () => {
 		if (type === "default") {
-			return "border-none bg-red-700";
+			return "border-none bg-transparent";
 		}
 		if (type === "outline") {
 			return "bg-transparent border border-gray-200/30";
