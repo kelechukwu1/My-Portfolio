@@ -34,7 +34,7 @@ const AboutFew = () => {
 							<div className="flex text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
 								<SpringyText text="Kelechukwu I.O" />
 							</div>
-							<div className="text-xl flex mt-5 justify-center text-center lg:text-start">
+							<div className="text-gray-300 text-xl flex mt-5 justify-center text-center lg:text-start">
 								I'm a creative Frontend Developer passionate about converting
 								ideas into standard and scalable products.
 							</div>

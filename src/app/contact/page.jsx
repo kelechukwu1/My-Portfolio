@@ -38,7 +38,7 @@ const Contact = () => {
 							className="justify-center text-3xl md:text-4xl lg:text-5xl"
 							text="Get In Touch!"
 						/>
-						<h1 className="px-5 md:px-0 text-muted-main fluid-lg ">
+						<h1 className="text-gray-300 px-5 md:px-0 text-muted-main fluid-lg ">
 							I’m currently open to joining a new team of creative developers.
 							Also, if you have a question, proposal, idea or just want to say
 							hi, Go ahead.
