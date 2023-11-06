@@ -4,7 +4,8 @@ import React from "react";
 // import { useCursorContext } from "../../hooks";
 import Link from "next/link";
 import Image from "next/image";
-import { AiOutlineArrowUp, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { PiArrowSquareOutBold } from "react-icons/pi";
 import SpringyText from "./springy-text/SpringyText";
 import PrimaryButton from "./PrimaryButton";
 
@@ -27,7 +28,7 @@ const ProjectCard = () => {
 				<div className="justify-start mt-16 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
 					<SpringyText text="My Projects" />
 				</div>
-				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-400">
+				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-300 comic">
 					Each one is unique. Take a look.
 				</div>
 			</div>
@@ -51,9 +52,11 @@ const ProjectCard = () => {
 						/>
 					</div>
 					<div className="space-y-5 col-span-1">
-						<div className="text-xl text-gray-400">01</div>
-						<div className="text-gray-100 text-3xl">Flight Reservation</div>
-						<div className="text-gray-400 text-xl">
+						<div className="text-xl text-gray-300">01</div>
+						<div className="text-gray-100 text-3xl noto">
+							Flight Reservation
+						</div>
+						<div className="text-gray-300 text-xl comic">
 							<div>
 								This is a web application which allows users to book and pay for
 								thier flights seemlessly.
@@ -80,7 +83,7 @@ const ProjectCard = () => {
 									target="_blank"
 									href={"https://www.flight-reservation-system.vercel.app"}
 								>
-									<AiOutlineArrowUp className="text-3xl text-gray-200" />
+									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -90,9 +93,9 @@ const ProjectCard = () => {
 				<div className="text-white">
 					<div className="grid md:grid-cols-3 items-center justify-center gap-10">
 						<div className="space-y-5 col-span-1">
-							<div className="text-xl text-gray-400">02</div>
+							<div className="text-xl text-gray-300">02</div>
 							<div className="text-gray-100 text-3xl">Remote Mobile Fix</div>
-							<div className="text-gray-400 col-span-1 text-xl">
+							<div className="text-gray-300 col-span-1 text-xl">
 								<div>
 									This web app enables users in Owerri (capital of Imo State,
 									Nigeria) to locate phone repairers close to thier location.
@@ -120,7 +123,7 @@ const ProjectCard = () => {
 										target="_blank"
 										href={"https://www.remote-mobile-fix.vercel.app"}
 									>
-										<AiOutlineArrowUp className="text-3xl text-gray-200" />
+										<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 									</Link>
 								</div>
 							</div>
@@ -166,16 +169,18 @@ const ProjectCard = () => {
 						/>
 					</div>
 					<div className="space-y-5 col-span-1 mt-10">
-						<div className="flex text-xl text-gray-400 items-center gap-2">
+						<div className="flex text-xl text-gray-300 items-center gap-2 noto">
 							01{" "}
-							<span className="text-gray-100 text-3xl">Flight Reservation</span>
+							<span className="text-gray-100 text-3xl noto">
+								Flight Reservation
+							</span>
 						</div>
-						<div className="text-gray-400 text-xl">
-							<div>
+						<div className="text-gray-300 text-xl">
+							<div className="comic">
 								This is a web application which allows users to book and pay for
 								thier flights seemlessly.
 							</div>
-							<div>Stack/Tools : NextJs, TailwindCss</div>
+							<div className="comic">Stack/Tools : NextJs, TailwindCss</div>
 						</div>
 						<div className="flex gap-5 items-center">
 							<div>
@@ -197,7 +202,7 @@ const ProjectCard = () => {
 									target="_blank"
 									href={"https://www.flight-reservation-system.vercel.app"}
 								>
-									<AiOutlineArrowUp className="text-3xl text-gray-200" />
+									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -222,17 +227,19 @@ const ProjectCard = () => {
 								height={10}
 							/>
 						</div>
-						<div className="flex text-xl text-gray-400 items-center gap-2">
+						<div className="flex text-xl text-gray-300 items-center gap-2 noto">
 							02{" "}
-							<span className="text-gray-100 text-3xl">Remote Mobile Fix</span>
+							<span className="text-gray-100 text-3xl noto">
+								Remote Mobile Fix
+							</span>
 						</div>
-						<div className="text-gray-400 col-span-1 text-xl">
-							<div>
+						<div className="text-gray-300 col-span-1 text-xl">
+							<div className="comic">
 								This web app enables users in Owerri (capital of Imo State,
 								Nigeria) to locate phone repairers close to thier location.
 							</div>
 
-							<div>Stack/Tools : NextJs, TailwindCss</div>
+							<div className="comic">Stack/Tools : NextJs, TailwindCss</div>
 						</div>
 						<div className="flex gap-5 items-center">
 							<div>
@@ -254,7 +261,7 @@ const ProjectCard = () => {
 									target="_blank"
 									href={"https://www.remote-mobile-fix.vercel.app"}
 								>
-									<AiOutlineArrowUp className="text-3xl text-gray-200" />
+									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>

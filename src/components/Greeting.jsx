@@ -7,7 +7,7 @@ const Greeting = () => {
 			<div className="flex text-center justify-center lg:justify-start text-[1.4rem] md:text-4xl font-black">
 				<SpringyText text="Kelechukwu Ikechukwu O." />
 			</div>
-			<div className="text-xl flex mt-5 justify-center text-center md:px-20">
+			<div className="text-xl flex mt-5 justify-center text-center md:px-20 text-gray-300 comic">
 				I'm a creative Frontend Developer passionate about converting ideas into
 				standard and scalable products.
 			</div>

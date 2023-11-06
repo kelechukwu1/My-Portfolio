@@ -50,7 +50,7 @@ const Projects = () => {
 				<div className="justify-start mt-16 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
 					<SpringyText text="My Projects" />
 				</div>
-				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-400">
+				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-300">
 					Each one is unique. Take a look.
 				</div>
 			</div>
