@@ -43,7 +43,7 @@ const Footer = () => {
 				{socials.map((item, index) => (
 					<div
 						key={index}
-						className="hover:border-b border-b-white mx-2 md:md:mx-0"
+						className="hover:border-b hover:text-blue-500 border-b-white mx-2 md:md:mx-0"
 					>
 						<Link
 							href={item.url}

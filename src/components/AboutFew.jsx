@@ -18,7 +18,7 @@ import SpringyText from "./springy-text/SpringyText";
 const AboutFew = () => {
 	return (
 		<>
-			<div className="h-full px-4 md:px-24 md:pb-24 lg:py-2 flex items-center">
+			<div className="h-full px-4 md:px-24 lg:py-20 flex items-center">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:justify-between">
 					<div className="flex justify-center mt-10 md:mt-0 lg:hidden">
 						<Image
@@ -49,11 +49,11 @@ const AboutFew = () => {
 						</div>
 
 						<div className="lg:hidden mt-20 lg:mt-0 justify-center lg:justify-start">
-							<div className="flex justify-center mb-8 text-3xl md:text-4xl lg:text-5xl font-black text-center lg:text-start">
+							<div className="mb-8 text-3xl md:text-4xl lg:text-5xl font-black text-center lg:text-start">
 								<SpringyText text="A Little About Me" />
 							</div>
 
-							<div className="text-center mb-8 lg:text-start text-xl md:text-[1.1rem] text-muted-main fluid-lg">
+							<div className="mb-8 text-xl md:text-[1.1rem] text-muted-main fluid-lg">
 								Focused on building awesome and high-quality websites that are
 								also visually appealing and easy to use. I have a strong
 								foundation in HTML, CSS, and JavaScript, and I'm proficient in

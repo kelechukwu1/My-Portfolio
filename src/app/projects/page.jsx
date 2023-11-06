@@ -1,7 +1,7 @@
 // import { Navbar, PrimaryButton, ProjectCard, Section } from "../../components";
 import React from "react";
 import Link from "next/link";
-import ProjectCard from "@/components/ProjectCard";
+import SpringyText from "@/components/springy-text/SpringyText";
 // import supabase from "../../config/supabaseClient";
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
 		{
 			name: "projectOne",
 			tools: "react",
-			images: "/setup.jpg",
+			image: "/setup.jpg",
 			github_link: "github_link",
 			role: "role",
 			description: "description",
@@ -28,7 +28,7 @@ const Projects = () => {
 		{
 			name: "projectTwo",
 			tools: "NextJs",
-			images: "/setup.jpg",
+			image: "/KC.jpeg",
 			github_link: "null",
 			role: "null",
 			description: "null",
@@ -36,39 +36,35 @@ const Projects = () => {
 		},
 	];
 
-	const featuredProjects = projects.map((proj) => (
-		<li key={proj.name}>
-			<ProjectCard proj={proj} />
-		</li>
-	));
+	// const featuredProjects = projects.map((proj) => (
+	// 	<li key={proj.name}>
+	// 		<ProjectCard proj={proj} />
+	// 	</li>
+	// ));
 
 	return (
-		<section className="flex flex-col gap-16">
+		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
 			{/* <Navbar /> */}
 
-			<main
-				className="
-          flex 
-          flex-col 
-          gap-8 
-        "
+			<div className="">
+				<div className="justify-start mt-16 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
+					<SpringyText text="My Projects" />
+				</div>
+				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-400">
+					Each one is unique. Take a look.
+				</div>
+			</div>
+			<ul
+			// className="
+			//   grid
+			//   grid-cols-1
+			//   md:gap-16
+			//   md:grid-cols-2
+			// "
 			>
-				<ul
-					className="
-            grid 
-            grid-cols-1 
-            gap-16 
-            md:grid-cols-2 
-          "
-				>
-					{featuredProjects}
-				</ul>
-				<Link className="mx-auto mt-8" href={"/projects"}>
-					{" "}
-					{/* <PrimaryButton name="Projects Archive" /> */}
-				</Link>
-			</main>
-		</section>
+				<div className="text-6xl">Coming Soon...</div>
+			</ul>
+		</div>
 	);
 };
 

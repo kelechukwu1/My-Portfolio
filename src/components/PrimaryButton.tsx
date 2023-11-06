@@ -1,3 +1,4 @@
+"use client";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import React, { useRef, useState } from "react";
 
@@ -20,13 +21,13 @@ const PrimaryButton = ({
 
 	const getBtnTypeClass = () => {
 		if (type === "default") {
-			return "border-none bg-transparent";
+			return "border-none bg-red-500";
 		}
 		if (type === "outline") {
 			return "bg-transparent border border-gray-200/30";
 		}
 		if (type === "solid") {
-			return "bg-accent-primary border border-blue-500";
+			return "bg-accent-primary border border-blue-500 hover:border-white hover:bg-blue-700 transition duration-500";
 		}
 		if (type === "loading") {
 			return "border-none bg-blue-500";
