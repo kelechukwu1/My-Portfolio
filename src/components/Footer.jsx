@@ -1,31 +1,31 @@
 import Link from "next/link";
 import {
-	AiOutlineGithub,
-	AiOutlineTwitter,
-	AiOutlineLinkedin,
-	AiOutlineWhatsApp,
-} from "react-icons/ai";
+	RiGithubLine,
+	RiLinkedinLine,
+	RiTwitterXLine,
+	RiWhatsappLine,
+} from "react-icons/ri";
 
 const Footer = () => {
 	const socials = [
 		{
 			name: "Twitter",
-			icon: <AiOutlineTwitter className="w-7 md:w-8 h-7 md:h-8" />,
+			icon: <RiTwitterXLine className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 		{
 			name: "LinkedIn",
-			icon: <AiOutlineLinkedin className="w-7 md:w-8 h-7 md:h-8" />,
+			icon: <RiLinkedinLine className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 		{
 			name: "Github",
-			icon: <AiOutlineGithub className="w-7 md:w-8 h-7 md:h-8" />,
+			icon: <RiGithubLine className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "https://github.com/kelechukwu1",
 		},
 		{
 			name: "WhatsApp",
-			icon: <AiOutlineWhatsApp className="w-7 md:w-8 h-7 md:h-8" />,
+			icon: <RiWhatsappLine className="w-7 md:w-8 h-7 md:h-8" />,
 			url: "",
 		},
 	];
