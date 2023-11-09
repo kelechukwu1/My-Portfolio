@@ -30,15 +30,13 @@ const Contact = () => {
 					<header
 						className="flex flex-col 
             gap-2
-            
-            md:items-start
-            md:text-left"
+            text-center justify-center items-center"
 					>
 						<SpringyText
-							className="text-3xl md:text-4xl lg:text-5xl"
+							className="flex text-center justify-center text-3xl md:text-4xl lg:text-5xl"
 							text="Get In Touch!"
 						/>
-						<h1 className="text-gray-300 md:px-0 text-muted-main fluid-lg comic">
+						<h1 className="text-center text-gray-300 md:px-0 text-muted-main fluid-lg comic">
 							I’m currently open to joining a new team of creative developers.
 							Also, if you have a question, proposal, idea or just want to say
 							hi, Go ahead.

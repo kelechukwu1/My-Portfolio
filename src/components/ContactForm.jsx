@@ -152,7 +152,7 @@ const ContactForm = () => {
 				<textarea
 					id="message"
 					required
-					rows={8}
+					rows={4}
 					placeholder=" "
 					cols={33}
 					className={inputClass}

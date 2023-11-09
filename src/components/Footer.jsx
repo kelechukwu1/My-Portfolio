@@ -50,7 +50,6 @@ const Footer = () => {
 							className="inline-block text-text-main fluid-4xl hover:-translate-y-1 transition duration-300"
 						>
 							<div className="flex justify-center">{item.icon}</div>
-							<div>{item.name}</div>
 						</Link>
 					</div>
 				))}
