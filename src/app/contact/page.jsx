@@ -28,17 +28,17 @@ const Contact = () => {
 			<main className="flex gap-16">
 				<div className="flex w-full flex-col md:gap-12">
 					<header
-						className="flex flex-col items-center
+						className="flex flex-col 
             gap-2
-            text-center
+            
             md:items-start
             md:text-left"
 					>
 						<SpringyText
-							className="justify-center text-3xl md:text-4xl lg:text-5xl"
+							className="text-3xl md:text-4xl lg:text-5xl"
 							text="Get In Touch!"
 						/>
-						<h1 className="text-gray-300 px-5 md:px-0 text-muted-main fluid-lg comic">
+						<h1 className="text-gray-300 md:px-0 text-muted-main fluid-lg comic">
 							I’m currently open to joining a new team of creative developers.
 							Also, if you have a question, proposal, idea or just want to say
 							hi, Go ahead.
