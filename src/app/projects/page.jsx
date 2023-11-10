@@ -72,7 +72,7 @@ const Projects = () => {
 										<div className="text-gray-100 text-3xl noto">
 											{project.name}
 										</div>
-										<div className="text-gray-300 text-xl comic">
+										<div className="text-gray-300 text-xl">
 											<div>
 												This is a web application which allows users to book and
 												pay for thier flights seemlessly.
@@ -135,8 +135,8 @@ const Projects = () => {
 											</span>
 										</div>
 										<div className="text-gray-300 text-xl">
-											<div className="comic">{project.description}</div>
-											<div className="comic">Stack/Tools : {project.tools}</div>
+											<div className=" ">{project.description}</div>
+											<div className=" ">Stack/Tools : {project.tools}</div>
 										</div>
 										<div className="flex gap-5 items-center">
 											<div>

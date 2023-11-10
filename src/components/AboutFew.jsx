@@ -35,7 +35,7 @@ const AboutFew = () => {
 							<div className="flex text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
 								<SpringyText text="Kelechukwu I.O" />
 							</div>
-							<div className="text-gray-300 text-xl flex mt-5 justify-center text-center lg:text-start comic">
+							<div className="text-gray-300 text-xl flex mt-5 justify-center text-center lg:text-start  ">
 								I'm a creative Frontend Developer passionate about converting
 								ideas into standard and scalable products.
 							</div>
@@ -55,7 +55,7 @@ const AboutFew = () => {
 								<SpringyText text="A Little About Me" />
 							</div>
 
-							<div className="flex mb-8 text-xl md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300 comic">
+							<div className="flex mb-8 text-xl md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300  ">
 								Focused on building awesome and high-quality websites that are
 								also visually appealing and easy to use. I have a strong
 								foundation in HTML, CSS, and JavaScript, and I'm proficient in

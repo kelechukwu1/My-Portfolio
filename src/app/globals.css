@@ -4,20 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "comic-neue";
-	src: url("../../public/fonts/ComicNeue-Regular.ttf") format("truetype");
-	font-weight: 800;
-	font-display: swap;
-}
-@font-face {
-	font-family: "noto-serif";
-	src: url("../../public/fonts/NotoSerifOldUyghur-Regular.ttf")
-		format("truetype");
-	font-weight: 800;
-	font-display: swap;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -30,7 +16,7 @@ body {
 		rgb(var(--background-end-rgb)),
 		rgb(var(--background-start-rgb))
 	);
-	font-family: "Poppins" "Noto Serif", "Comic Neue", cursive, sans-serif;
+	font-family: "Poppins" "Noto Serif", sans-serif;
 	scroll-behavior: smooth;
 	scroll-padding-top: 0px;
 	scroll-behavior: smooth;
@@ -88,13 +74,4 @@ body {
 }
 .mobileNav {
 	@apply md:hidden absolute right-8 top-16 w-32 bg-stone-800 rounded-lg overflow-hidden text-xl justify-center items-center flex transition-all duration-500 ease-in-out;
-}
-
-@layer utilities {
-	.comic {
-		font-family: "comic-neue", cursive;
-	}
-	.noto {
-		font-family: "noto-serif", serif;
-	}
 }
