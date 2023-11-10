@@ -42,7 +42,7 @@ const Navbar = () => {
 	return (
 		<>
 			<header>
-				<div className="md:flex md:px-20 justify-between items-center shadow">
+				<div className="md:flex md:px-20 justify-between items-center">
 					<div className="flex justify-between items-center py-8 px-4">
 						<div>
 							<Link

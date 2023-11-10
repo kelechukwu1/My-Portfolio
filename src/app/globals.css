@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	font-family: "Poppins", "Noto Serif JP", serif, "Comic Neue", cursive;
-	margin: 0;
-	padding: 0;
-}
-
 @font-face {
 	font-family: "comic-neue";
 	src: url("../../public/fonts/ComicNeue-Regular.ttf") format("truetype");
@@ -17,10 +11,29 @@
 	font-display: swap;
 }
 @font-face {
-	font-family: "noto-serif jp";
-	src: url("../../public/fonts/NotoSerifJP-Bold.otf") format("truetype");
+	font-family: "noto-serif";
+	src: url("../../public/fonts/NotoSerifOldUyghur-Regular.ttf")
+		format("truetype");
 	font-weight: 800;
 	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+		to bottom,
+		rgb(var(--background-end-rgb)),
+		rgb(var(--background-start-rgb))
+	);
+	font-family: "Poppins" "Noto Serif", "Comic Neue", cursive, sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 0px;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -37,14 +50,19 @@
 	}
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: rgb(10, 10, 10);
+}
+
 ::-webkit-scrollbar-thumb {
-	background-color: #4e079e;
+	background-color: #232124;
 	border: 2px solid #111;
 	border-radius: 100vmax;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #6d09df;
+	background: #36323a;
 	cursor: pointer;
 }
 
@@ -62,18 +80,6 @@
 	}
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-		to bottom,
-		rgb(var(--background-end-rgb)),
-		rgb(var(--background-start-rgb))
-	);
-	scroll-behavior: smooth;
-	scroll-padding-top: 0px;
-	scroll-behavior: smooth;
-}
-
 /* Additional CSS for large screens */
 @media screen and (min-width: 1024px) {
 	body {
@@ -89,25 +95,6 @@ body {
 		font-family: "comic-neue", cursive;
 	}
 	.noto {
-		font-family: "noto-serif jp", serif;
+		font-family: "noto-serif", serif;
 	}
 }
-/* @media (hover: hover) {
-	::-webkit-scrollbar {
-		width: 13px;
-	}
-
-	::-webkit-scrollbar-track {
-		background: transparent;
-		margin-block: 0.5rem;
-	}
-
-	::-webkit-scrollbar-thumb {
-		border: 2px solid #111;
-		background: #333;
-		border-radius: 100vmax;
-	}
-
-  ::-webkit-scrollbar {
-	width: 10px;
-} */

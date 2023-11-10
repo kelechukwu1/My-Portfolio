@@ -7,16 +7,6 @@ import { PiArrowSquareOutBold } from "react-icons/pi";
 // import supabase from "../../config/supabaseClient";
 
 const Projects = () => {
-	// const [projects, setProjects] = useState<ProjectProps[]>([]);
-
-	// useEffect(() => {
-	//   const fetchProjects = async () => {
-	//     const { data } = await supabase.from("projects").select();
-
-	//     data && setProjects(data as any);
-	//   };
-	//   fetchProjects();
-	// }, []);
 	const projects = [
 		{
 			id: 1,
@@ -43,12 +33,6 @@ const Projects = () => {
 		},
 	];
 
-	// const featuredProjects = projects.map((proj) => (
-	// 	<li key={proj.name}>
-	// 		<ProjectCard proj={proj} />
-	// 	</li>
-	// ));
-
 	return (
 		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
 			{/* <Navbar /> */}
@@ -68,7 +52,7 @@ const Projects = () => {
 						<div>
 							<div className="hidden lg:block">
 								<div className="grid lg:grid-cols-3 items-center justify-center gap-16">
-									<div className="justify-end col-span-2">
+									<div className="justify-end col-span-2 mb-20">
 										<Image
 											src={project.image}
 											alt={`${project.image} screenshot`}

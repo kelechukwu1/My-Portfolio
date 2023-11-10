@@ -24,19 +24,19 @@ const Contact = () => {
 	));
 
 	return (
-		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center">
+		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center lg:text-start lg:justify-start lg:items-start">
 			<main className="flex gap-16">
-				<div className="flex w-full flex-col md:gap-12">
+				<div className="flex w-full flex-col md:gap-12 lg:text-start lg:justify-start lg:items-start">
 					<header
 						className="flex flex-col 
             gap-2
-            text-center justify-center items-center"
+            text-center justify-center items-center lg:text-start lg:justify-start lg:items-start"
 					>
 						<SpringyText
-							className="flex text-center justify-center text-3xl md:text-4xl lg:text-5xl"
+							className="text-3xl md:text-4xl lg:text-5xl lg:text-start lg:justify-start lg:items-start"
 							text="Get In Touch!"
 						/>
-						<h1 className="text-center text-gray-300 md:px-0 text-muted-main fluid-lg comic">
+						<h1 className="text-center lg:text-start lg:justify-start text-gray-300 md:px-0 lg:pr-20 xl:pr-44 text-muted-main fluid-lg comic">
 							I’m currently open to joining a new team of creative developers.
 							Also, if you have a question, proposal, idea or just want to say
 							hi, Go ahead.
