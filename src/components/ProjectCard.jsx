@@ -46,7 +46,7 @@ const ProjectCard = () => {
 				<div className=" flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
 					<SpringyText text="My Projects" />
 				</div>
-				<div className="flex mt-2 md:mt-5 md:mb-10 text-xl text-center justify-center lg:text-start lg:justify-start text-gray-300  ">
+				<div className="flex mt-2 md:mt-5 md:mb-10 text-muted-main fluid-lg text-center justify-center lg:text-start lg:justify-start text-gray-300  ">
 					Each one is unique. Take a look.
 				</div>
 			</div>
@@ -75,7 +75,7 @@ const ProjectCard = () => {
 							<div className="text-gray-100 font-bold text-3xl">Fly ASAP</div>
 						</div>
 
-						<div className="text-gray-300 text-xl  ">
+						<div className="text-gray-300 text-muted-main fluid-lg">
 							<div>
 								This is a web application which allows users to book and pay for
 								thier flights seemlessly.
@@ -118,7 +118,7 @@ const ProjectCard = () => {
 							</div>
 						</div>
 
-						<div className="text-gray-300 text-xl  ">
+						<div className="text-gray-300 text-muted-main fluid-lg">
 							<div>
 								This is a web application which allows users to book and pay for
 								thier flights seemlessly.
@@ -197,7 +197,7 @@ const ProjectCard = () => {
 												{project.name}
 											</span>
 										</div>
-										<div className="text-gray-300 text-xl">
+										<div className="text-gray-300 text-muted-main fluid-lg">
 											<div className=" ">{project.description}</div>
 											<div className=" ">Stack/Tools : {project.tools}</div>
 										</div>

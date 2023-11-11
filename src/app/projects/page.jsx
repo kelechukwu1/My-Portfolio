@@ -41,7 +41,7 @@ const Projects = () => {
 				<div className="justify-start mt-5 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
 					<SpringyText text="My Projects" />
 				</div>
-				<div className="text-start mt-2 md:mt-5 md:mb-10 text-xl text-gray-300">
+				<div className="text-start mt-2 md:mt-5 md:mb-10 text-muted-main fluid-lg text-gray-300">
 					Each one is unique. Take a look.
 				</div>
 			</div>
@@ -72,7 +72,7 @@ const Projects = () => {
 										<div className="text-gray-100 text-3xl noto">
 											{project.name}
 										</div>
-										<div className="text-gray-300 text-xl">
+										<div className="text-gray-300 text-muted-main fluid-lg">
 											<div>
 												This is a web application which allows users to book and
 												pay for thier flights seemlessly.
@@ -130,7 +130,7 @@ const Projects = () => {
 									<div className="space-y-5 col-span-1 mt-10">
 										<div className="flex text-xl text-gray-300 items-center gap-2 noto">
 											{`0${project.id}`}
-											<span className="text-gray-100 text-3xl noto">
+											<span className="text-gray-100 text-muted-main fluid-lg noto">
 												{project.name}
 											</span>
 										</div>
