@@ -42,7 +42,7 @@ const ProjectCard = () => {
 
 	return (
 		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
-			<div className="mb-20">
+			<div className="mb-10">
 				<div className=" flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
 					<SpringyText text="My Projects" />
 				</div>
@@ -190,10 +190,10 @@ const ProjectCard = () => {
 											height={10}
 										/>
 									</div>
-									<div className="space-y-5 col-span-1 mt-10">
-										<div className="flex text-xl text-gray-300 items-center gap-2">
+									<div className="space-y-3 col-span-1 mt-5">
+										<div className="flex text-md text-gray-300 items-center gap-1">
 											{`0${project.id}`}
-											<span className="text-gray-100 text-2xl font-semibold">
+											<span className="text-gray-100 text-xl font-semibold">
 												{project.name}
 											</span>
 										</div>

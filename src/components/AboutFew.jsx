@@ -51,11 +51,11 @@ const AboutFew = () => {
 
 						{/* small screen */}
 						<div className="lg:hidden mt-20 justify-center">
-							<div className="flex mb-8 text-3xl md:text-4xl font-black justify-center text-center">
+							<div className="flex text-3xl mb-5 md:text-4xl font-black justify-center text-center">
 								<SpringyText text="A Little About Me" />
 							</div>
 
-							<div className="flex mb-8 text-muted-main fluid-lg md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300  ">
+							<div className="flex mb-10 text-muted-main fluid-lg md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300  ">
 								Focused on building awesome and high-quality websites that are
 								also visually appealing and easy to use. I have a strong
 								foundation in HTML, CSS, and JavaScript, and I'm proficient in
@@ -64,7 +64,7 @@ const AboutFew = () => {
 								front-end technologies.
 							</div>
 
-							<div className="flex justify-center mt-10 md:mt-20">
+							<div className="flex justify-center md:mt-20">
 								<Link className="mx-auto" href={"/about"}>
 									<PrimaryButton
 										name="More About Me"

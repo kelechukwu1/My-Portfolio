@@ -33,6 +33,8 @@ const Projects = () => {
 		},
 	];
 
+	const user = process.env.EMAIL_ADDRESS;
+	console.log(user);
 	return (
 		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
 			{/* <Navbar /> */}
