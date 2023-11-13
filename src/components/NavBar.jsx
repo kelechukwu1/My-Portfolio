@@ -8,7 +8,19 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
 	const pathname = usePathname();
 	const [open, setOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
 	const navbarRef = useRef(null);
+
+	const handleScroll = () => {
+		const scrollY = window.scrollY;
+		setScrolled(scrollY > 0);
+	};
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	//this effect closes the navbar if it's open when you click anywhere on the window object
 	useEffect(() => {
 		const handleOutsideClick = (event) => {
 			if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -41,8 +53,12 @@ const Navbar = () => {
 	];
 	return (
 		<>
-			<header>
-				<div className="md:flex md:px-20 justify-between items-center">
+			<header className="mb-24">
+				<div
+					className={`md:flex md:px-20 justify-between items-center fixed top-0 left-0 z-10 w-full transition-colors duration-300 ${
+						scrolled ? "bg-transparent backdrop-filter backdrop-blur-md" : ""
+					}`}
+				>
 					<div className="flex justify-between items-center py-8 px-4">
 						<div>
 							<Link
