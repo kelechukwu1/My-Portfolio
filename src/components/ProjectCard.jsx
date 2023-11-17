@@ -17,26 +17,24 @@ const ProjectCard = () => {
 	const projects = [
 		{
 			id: 1,
-			name: "Fly ASAP",
-			tools: "NextJs, TailwindCss",
-			image: "/setup.jpg",
-			github_link: "https://www.github.com/kelechukwu1",
-			live_link: "https://www.flight-reservation-project.vercel.app",
-			role: "role",
+			name: "GetLinkedAI",
+			tools: "NextJs, TailwindCss, GSAP, AOS.js",
+			image: "/getlinked.png",
+			github_link: "https://github.com/kelechukwu1/getlinkedAI",
+			live_link: "https://www.getlinked-ai-psi.vercel.app",
 			description:
-				"This is a web application which allows users to book and pay for thier flights seemlessly.",
-			deployed_link: "deployed_link",
+				"A 5-days hackathon project I participated, built and completed with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
 		},
+
 		{
 			id: 2,
 			name: "Remote Mobile Fix",
 			tools: "NextJs, TailwindCss",
-			image: "/setup.jpg",
-			github_link: "https://www.github.com/kelechukwu1",
-			role: "null",
+			image: "/remotefix.png",
+			github_link: "https://github.com/kelechukwu1/remote-mobile-fix",
 			description:
 				"This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
-			deployed_link: "https://www.remote-mobile-fix.vercel.app",
+			live_link: "https://www.remote-mobile-fix.vercel.app",
 		},
 	];
 
@@ -56,7 +54,7 @@ const ProjectCard = () => {
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
 					<div className="justify-end col-span-2">
 						<Image
-							src={"/setup.jpg"}
+							src={"/getlinked.png"}
 							alt={"setup screenshot"}
 							className="
                 pointer-events-none
@@ -65,22 +63,26 @@ const ProjectCard = () => {
                 ease-in-out
                 group-hover:scale-105
                 w-full h-[20rem]"
-							width={900}
-							height={10}
+							width={500}
+							height={500}
 						/>
 					</div>
 					<div className="space-y-5 col-span-1">
-						<div className="flex lg:gap-3 items-center">
-							<div className="text-xl text-gray-300">01</div>
-							<div className="text-gray-100 font-bold text-3xl">Fly ASAP</div>
+						<div className="lg:gap-3 items-center">
+							<div className="text-xl text-gray-300 mb-5">01</div>
+							<div className="text-gray-100 font-bold text-3xl">
+								GetLinkedAI
+							</div>
 						</div>
 
 						<div className="text-gray-300 text-muted-main fluid-lg">
 							<div>
-								This is a web application which allows users to book and pay for
-								thier flights seemlessly.
+								A 5-days hackathon project I participated, built and completed
+								with Ayoola my good friend, we ensured maximum responsiveness
+								and built beautiful components and pages, also played around
+								with getLinkedAI API.
 							</div>
-							<div>Stack/Tools : NextJs, TailwindCss</div>
+							<div>Stack/Tools : NextJs, TailwindCss, GSAP, AOS.js</div>
 						</div>
 						<div className="flex gap-5 items-center">
 							<div>
@@ -89,7 +91,7 @@ const ProjectCard = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.github.com/kelechukwu1"}
+									href={"https://github.com/kelechukwu1/getlinkedAI"}
 								>
 									<AiOutlineGithub className="text-3xl text-gray-200" />
 								</Link>
@@ -100,7 +102,7 @@ const ProjectCard = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.flight-reservation-system.vercel.app"}
+									href={"https://www.getlinked-ai-psi.vercel.app"}
 								>
 									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 								</Link>
@@ -111,28 +113,28 @@ const ProjectCard = () => {
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
 					<div className="space-y-5 col-span-1">
-						<div className="flex lg:gap-3 items-center">
-							<div className="text-xl text-gray-300">02</div>
-							<div className="text-gray-100 font-bold text-3xl">
+						<div className="lg:gap-3 items-center">
+							<div className="text-xl text-gray-300 text-end mb-5">02</div>
+							<div className="text-gray-100 font-bold text-3xl text-end">
 								RemoteMobile Fix
 							</div>
 						</div>
 
-						<div className="text-gray-300 text-muted-main fluid-lg">
+						<div className="text-gray-300 text-muted-main fluid-lg text-end">
 							<div>
 								This is a web application which allows users to book and pay for
 								thier flights seemlessly.
 							</div>
 							<div>Stack/Tools : NextJs, TailwindCss</div>
 						</div>
-						<div className="flex gap-5 items-center">
+						<div className="flex gap-5 items-center justify-end">
 							<div>
 								<Link
 									// onMouseEnter={() => githubProjectCursor()}
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.github.com/kelechukwu1"}
+									href={"https://github.com/kelechukwu1/remote-mobile-fix"}
 								>
 									<AiOutlineGithub className="text-3xl text-gray-200" />
 								</Link>
@@ -143,7 +145,7 @@ const ProjectCard = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.flight-reservation-system.vercel.app"}
+									href={"https://www.remote-mobile-fix.vercel.app"}
 								>
 									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 								</Link>
@@ -152,7 +154,7 @@ const ProjectCard = () => {
 					</div>
 					<div className="justify-end col-span-2">
 						<Image
-							src={"/setup.jpg"}
+							src={"/remotefix.png"}
 							alt={"setup screenshot"}
 							className="
                 pointer-events-none
@@ -160,9 +162,9 @@ const ProjectCard = () => {
                 duration-400
                 ease-in-out
                 group-hover:scale-105
-                w-full h-[20rem]"
-							width={900}
-							height={10}
+                w-full h-[full]"
+							width={500}
+							height={500}
 						/>
 					</div>
 				</div>
@@ -185,7 +187,7 @@ const ProjectCard = () => {
                         duration-400
                         ease-in-out
                         group-hover:scale-105
-                        w-full h-[15rem]"
+                        w-full h-[100%]"
 											width={900}
 											height={10}
 										/>
@@ -208,7 +210,7 @@ const ProjectCard = () => {
 													// onMouseLeave={() => projectCursor()}
 													rel="noopener noreferrer"
 													target="_blank"
-													href={"https://www.github.com/kelechukwu1"}
+													href={project.github_link}
 												>
 													<AiOutlineGithub className="text-3xl text-gray-200" />
 												</Link>
@@ -219,9 +221,7 @@ const ProjectCard = () => {
 													// onMouseLeave={() => projectCursor()}
 													rel="noopener noreferrer"
 													target="_blank"
-													href={
-														"https://www.flight-reservation-system.vercel.app"
-													}
+													href={project.live_link}
 												>
 													<PiArrowSquareOutBold className="text-3xl text-gray-200" />
 												</Link>
