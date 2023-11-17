@@ -9,15 +9,6 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Kelechukwu Ikechukwu - Frontend Developer</title>
-				<meta
-					name="description"
-					content="Kelechukwu Ikechukwu - Front-End Developer specializing in creating visually stunning web applications."
-				/>
-				<meta
-					name="keywords"
-					content="front-end developer, web developer, HTML, CSS, JavaScript, React, portfolio, kelechukwu, Kelechukwu Ikechukwu, kelechukwuikechukwu"
-				/>
 				<meta
 					property="og:title"
 					content="Kelechukwu Ikechukwu - Frontend Developer"

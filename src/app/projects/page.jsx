@@ -22,7 +22,19 @@ const Projects = () => {
 		},
 		{
 			id: 2,
-			name: "projectTwo",
+			name: "projectTWo",
+			tools: "NextJs, TailwindCss",
+			image: "/setup.jpg",
+			github_link: "https://www.github.com/kelechukwu1",
+			live_link: "https://www.flight-reservation-project.vercel.app",
+			role: "role",
+			description:
+				"This is a web application which allows users to book and pay for thier flights seemlessly.",
+			deployed_link: "deployed_link",
+		},
+		{
+			id: 3,
+			name: "projectThree",
 			tools: "NextJs, TailwindCss",
 			image: "/KC.jpeg",
 			github_link: "https://www.github.com/kelechukwu1",
@@ -30,6 +42,19 @@ const Projects = () => {
 			description:
 				"This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
 			deployed_link: "https://www.remote-mobile-fix.vercel.app",
+		},
+
+		{
+			id: 4,
+			name: "projectFour",
+			tools: "NextJs, TailwindCss",
+			image: "/setup.jpg",
+			github_link: "https://www.github.com/kelechukwu1",
+			live_link: "https://www.flight-reservation-project.vercel.app",
+			role: "role",
+			description:
+				"This is a web application which allows users to book and pay for thier flights seemlessly.",
+			deployed_link: "deployed_link",
 		},
 	];
 
