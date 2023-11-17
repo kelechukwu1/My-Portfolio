@@ -2,7 +2,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
-// import { ProjectsSection, AboutSection, ContactSection } from "../sections";
 
 const poppins = Poppins({
 	weight: "400",
@@ -11,8 +10,11 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-	title: "Create Next App",
-	description: "Kelechukwu Ikechukwu's Portfolio Website",
+	title: "Kelechukwu Ikechukwu - Frontend Developer",
+	description:
+		"Kelechukwu Ikechukwu's Portfolio Website - Front-End Developer specializing in creating visually stunning web applications.",
+	keywords:
+		"front-end developer, web developer, HTML, CSS, JavaScript, React, portfolio, kelechukwu, Kelechukwu Ikechukwu, kelechukwuikechukwu",
 };
 
 export default function RootLayout({ children }) {
