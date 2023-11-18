@@ -23,6 +23,11 @@ const Contact = () => {
 		</li>
 	));
 
+	// fetch("/api/sendEmail")
+	// 	.then((response) => response.json())
+	// 	.then((data) => console.log(data, "okooo"))
+	// 	.catch((error) => console.error(error));
+
 	return (
 		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center lg:text-start lg:justify-start lg:items-start">
 			<main className="flex gap-16">

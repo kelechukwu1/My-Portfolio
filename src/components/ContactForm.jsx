@@ -1,7 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
 import React from "react";
-// import { useRouter } from "next/router";
 
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -59,11 +58,11 @@ const ContactForm = () => {
 		const message = e.target[3].value;
 
 		try {
-			await fetch("/api/contact", {
+			// Make a POST request to the API route
+			const response = await fetch("/api/sendEmail", {
 				method: "POST",
 				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
+					"content-type": "application/json",
 				},
 				body: JSON.stringify({
 					name: name,
@@ -73,6 +72,7 @@ const ContactForm = () => {
 				}),
 			});
 
+			// Check if the request was successful and pop an alert
 			setIsSending(false);
 			formRef?.current?.reset();
 			MySwal.fire({
@@ -92,7 +92,7 @@ const ContactForm = () => {
 				color: "#fff",
 				title: <strong>Message could not be sent.</strong>,
 				html: (
-					<p>
+					<div>
 						Please try again or send me an email directly at:{" "}
 						<TwLink
 							className="text-lg"
@@ -100,7 +100,7 @@ const ContactForm = () => {
 						>
 							obiefunakelechukwu@gmail.com
 						</TwLink>
-					</p>
+					</div>
 				),
 				confirmButtonText: "Close",
 				confirmButtonColor: "#1f7dcf",
