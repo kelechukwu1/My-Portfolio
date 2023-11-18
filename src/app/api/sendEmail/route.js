@@ -11,10 +11,7 @@ export async function POST(req) {
 					pass: process.env.NEXT_PUBLIC_EMAIL2FA_PASSWORD,
 				},
 			});
-			console.log(
-				process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
-				process.env.NEXT_PUBLIC_EMAIL2FA_PASSWORD
-			);
+
 			const mailOptions = {
 				from: email,
 				to: "obiefunakelechukwu@gmail.com",
