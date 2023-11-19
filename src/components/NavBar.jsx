@@ -59,7 +59,7 @@ const Navbar = () => {
 						scrolled ? "bg-transparent backdrop-filter backdrop-blur-md" : ""
 					}`}
 				>
-					<div className="flex justify-between items-center py-8 px-4">
+					<div className="flex justify-between items-center py-4 lg:py-8 px-4">
 						<div>
 							<Link
 								href="/"

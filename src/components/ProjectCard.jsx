@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineGithub } from "react-icons/ai";
-import { PiArrowSquareOutBold } from "react-icons/pi";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import SpringyText from "./springy-text/SpringyText";
 import PrimaryButton from "./PrimaryButton";
 
@@ -41,8 +41,8 @@ const ProjectCard = () => {
 	return (
 		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
 			<div className="mb-10">
-				<div className=" flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
-					<SpringyText text="My Projects" />
+				<div className="font flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
+					<SpringyText text="My ProjectsgetlinkedAI" />
 				</div>
 				<div className="flex mt-2 md:mt-5 md:mb-10 text-muted-main fluid-lg text-center justify-center lg:text-start lg:justify-start text-gray-300  ">
 					Each one is unique. Take a look.
@@ -104,7 +104,7 @@ const ProjectCard = () => {
 									target="_blank"
 									href={"https://www.getlinked-ai-psi.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -147,7 +147,7 @@ const ProjectCard = () => {
 									target="_blank"
 									href={"https://www.remote-mobile-fix.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -223,7 +223,7 @@ const ProjectCard = () => {
 													target="_blank"
 													href={project.live_link}
 												>
-													<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+													<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 												</Link>
 											</div>
 										</div>

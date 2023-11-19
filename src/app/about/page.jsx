@@ -35,7 +35,10 @@ const page = () => {
 							<div className="grid grid-cols-2 gap-4 justify-around mb-10">
 								<div className="flex justify-center text-center border border-blue-500 rounded-xl">
 									<Link
-										href={"https://github.com/kelechukwu1"}
+										href={
+											"https://drive.google.com/file/d/13totF7lsl0a1Zil80c20sovjmm6mhjCt/view?usp=drivesdkq.pdf"
+										}
+										download
 										className="space-y-1 p-4"
 									>
 										<div className="flex justify-center">

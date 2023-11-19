@@ -4,12 +4,9 @@ import ContactForm from "@/components/ContactForm";
 import TwLink from "@/components/tw-link/TwLink";
 import Section from "@/components/section/Section";
 import SpringyText from "@/components/springy-text/SpringyText";
-import {
-	RiPhoneLine,
-	RiInbox2Line,
-	RiUserLocationLine,
-	RiMailLine,
-} from "react-icons/ri";
+import { RiPhoneLine, RiUserLocationLine } from "react-icons/ri";
+import { HiOutlineMail } from "react-icons/hi";
+import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
 
 const socialsArr = [
@@ -51,21 +48,21 @@ const Contact = () => {
 					</header>
 
 					<div className="space-y-3 mt-20 text-gray-300">
-						<div className="flex gap-4 items-center">
+						<div className="flex gap-3 items-center">
 							<div>
-								<RiUserLocationLine className="w-7 md:w-8 h-7 md:h-8" />
+								<CiLocationOn className="w-6 md:w-7 h-6 md:h-7" />
 							</div>
-							<div className="font">Lagos, Nigeria</div>
+							<div className="">Lagos, Nigeria</div>
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
-								<RiPhoneLine className="w-7 md:w-8 h-7 md:h-8" />
+								<RiPhoneLine className="w-6 md:w-7 h-6 md:h-7" />
 							</div>
-							<Link href={"+2349063646331"}>+2349063646331</Link>
+							<Link href="tel:+2349063646331">+2349063646331</Link>{" "}
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
-								<RiMailLine className="w-7 md:w-8 h-7 md:h-8" />
+								<HiOutlineMail className="w-6 md:w-7 h-6 md:h-7" />
 							</div>
 							<Link href="mailto:obiefunakelechukwu@gmail.com">
 								obiefunakelechukwu@gmail.com
