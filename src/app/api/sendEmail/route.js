@@ -67,7 +67,6 @@ export async function POST(req) {
 					{ status: 500 }
 				);
 			}
-			console.log(err.message);
 		}
 	} else {
 		return new Response(JSON.stringify({ mesage: "Method not allowed" }), {
