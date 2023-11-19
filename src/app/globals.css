@@ -4,6 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "clash-display";
+	src: url("../../public/ClashDisplay-Variable.ttf") format("truetype");
+	font-weight: 800;
+	font-display: swap;
+}
+
+@layer utilities {
+	.font {
+		font-family: "clash-display", sans-serif;
+	}
+	.mobileNav {
+		@apply md:hidden absolute right-8 top-16 w-32 bg-stone-800 rounded-lg overflow-hidden text-xl justify-center items-center flex transition-all duration-500 ease-in-out;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,10 +32,11 @@ body {
 		rgb(var(--background-end-rgb)),
 		rgb(var(--background-start-rgb))
 	);
-	font-family: "Poppins" "Noto Serif", sans-serif;
+	font-family: "Poppins", "clash-display", sans-serif;
 	scroll-behavior: smooth;
 	scroll-padding-top: 0px;
 	scroll-behavior: smooth;
+	font-family: "clash-display", sans-serif;
 }
 
 :root {
@@ -71,7 +88,4 @@ body {
 	body {
 		background-size: 100% 100%;
 	}
-}
-.mobileNav {
-	@apply md:hidden absolute right-8 top-16 w-32 bg-stone-800 rounded-lg overflow-hidden text-xl justify-center items-center flex transition-all duration-500 ease-in-out;
 }

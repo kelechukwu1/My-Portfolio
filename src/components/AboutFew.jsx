@@ -32,10 +32,10 @@ const AboutFew = () => {
 					</div>
 					<div className="lg:mt-[9rem] xl:mt-0 xl:flex xl:items-center">
 						<div className="text-gray-300 hidden lg:block">
-							<div className="flex text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
-								<SpringyText text="Kelechukwu I.O" />
+							<div className="flex font text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
+								<SpringyText text="Kelechukwu getLinkedAIgGr I.O" />
 							</div>
-							<div className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start  ">
+							<div className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start font">
 								I'm a creative Frontend Developer passionate about converting
 								ideas into standard and scalable products.
 							</div>

@@ -102,11 +102,11 @@ const ContactForm = () => {
 				MySwal.fire({
 					background: "#222",
 					color: "#fff",
-					title: <strong>Validation Error!</strong>,
+					title: <strong className="font">Validation Error!</strong>,
 					html: (
 						<>
-							<p>{responseData.message}</p>
-							<div>
+							<p className="text-muted-main fluid-lg">{responseData.message}</p>
+							<div className="text-muted-main fluid-lg">
 								Please try again or send me an email directly at:{" "}
 								<TwLink
 									className="text-lg"

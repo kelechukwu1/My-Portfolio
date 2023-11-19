@@ -67,7 +67,7 @@ const Navbar = () => {
 									open ? setOpen(!open) : !open;
 								}}
 							>
-								<div className="">
+								<div className="font">
 									<span className="text-3xl transition ease-in-out duration-500 font-bold inline-block text-text-main fluid-4xl hover:-translate-y-1">
 										Kelechukwu
 									</span>
@@ -106,7 +106,7 @@ const Navbar = () => {
 								<div key={name} className="hover:border-b border-b-white mx-2">
 									<Link
 										href={link}
-										className={`md:px-4 my-5 md:my-0 md:text-xl inline-block text-text-main fluid-4xl hover:-translate-y-1 transition duration-300 ${
+										className={`md:px-4 my-5 md:my-0 md:text-xl inline-block font text-text-main fluid-4xl hover:-translate-y-1 transition duration-300 ${
 											pathname.startsWith(link) ? "" : ""
 										}`}
 									>
