@@ -72,20 +72,61 @@ const ContactForm = () => {
 				}),
 			});
 
-			// Check if the request was successful and pop an alert
-			setIsSending(false);
-			formRef?.current?.reset();
-			MySwal.fire({
-				background: "#222",
-				color: "#fff",
-				title: <strong>Message Sent!</strong>,
-				html: <p>I will get back to you soon.</p>,
-				confirmButtonText: "Close",
-				confirmButtonColor: "#1f7dcf",
-				icon: "success",
-			});
+			if (response.ok) {
+				// The response is okay, you can parse and use the data
+				const responseData = await response.json();
+				console.log("Kelechukwu's Server Response:", responseData);
+
+				// Check if the request was successful and pop an alert
+				setIsSending(false);
+				formRef?.current?.reset();
+				MySwal.fire({
+					background: "#222",
+					color: "#fff",
+					title: <strong>Message Sent!</strong>,
+					html: <p>I will get back to you soon.</p>,
+					confirmButtonText: "Close",
+					confirmButtonColor: "#1f7dcf",
+					icon: "success",
+				});
+			}
+
+			// Display error message using Swal only if the response is not okay
+			if (!response.ok) {
+				const responseData = await response.json();
+				console.log("Kelechukwu's Server Response:", responseData);
+				//reset form
+				formRef?.current?.reset();
+				setIsSending(false);
+				//fire error
+				MySwal.fire({
+					background: "#222",
+					color: "#fff",
+					title: <strong>Validation Error!</strong>,
+					html: (
+						<>
+							<p>{responseData.message}</p>
+							<div>
+								Please try again or send me an email directly at:{" "}
+								<TwLink
+									className="text-lg"
+									href="mailto:obiefunakelechukwu@gmail.com"
+								>
+									obiefunakelechukwu@gmail.com
+								</TwLink>
+							</div>
+						</>
+					),
+					confirmButtonText: "Close",
+					confirmButtonColor: "#1f7dcf",
+					icon: "error",
+				});
+			}
 		} catch (e) {
 			setIsSending(false);
+
+			console.log(e.message);
+
 			setErrorMsg(e.message);
 			MySwal.fire({
 				background: "#222",
