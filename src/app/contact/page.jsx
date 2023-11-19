@@ -1,13 +1,14 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import TwLink from "@/components/tw-link/TwLink";
 import Section from "@/components/section/Section";
 import SpringyText from "@/components/springy-text/SpringyText";
-import { RiPhoneLine, RiUserLocationLine } from "react-icons/ri";
-import { HiOutlineMail } from "react-icons/hi";
-import { CiLocationOn } from "react-icons/ci";
+import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const socialsArr = [
 	{
@@ -19,6 +20,15 @@ const socialsArr = [
 ];
 
 const Contact = () => {
+	//aos useEffect hook
+	useEffect(() => {
+		AOS.init({
+			duration: 750,
+			offset: 0,
+			once: true,
+			anchorPlacement: "top-bottom",
+		});
+	}, []);
 	const socials = socialsArr.map((social) => (
 		<li key={social.name}>
 			<TwLink className="text-lg text-white" href={social.link}>
@@ -30,7 +40,10 @@ const Contact = () => {
 	return (
 		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center lg:text-start lg:justify-start lg:items-start">
 			<main className="flex gap-16">
-				<div className="flex w-full flex-col md:gap-12 lg:text-start lg:justify-start lg:items-start">
+				<div
+					data-aos="fade-right"
+					className="flex w-full flex-col md:gap-12 lg:text-start lg:justify-start lg:items-start"
+				>
 					<header
 						className="flex flex-col 
             gap-2
@@ -56,13 +69,13 @@ const Contact = () => {
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
-								<RiPhoneLine className="w-6 md:w-7 h-6 md:h-7" />
+								<CiPhone className="w-6 md:w-7 h-6 md:h-7" />
 							</div>
 							<Link href="tel:+2349063646331">+2349063646331</Link>{" "}
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
-								<HiOutlineMail className="w-6 md:w-7 h-6 md:h-7" />
+								<CiMail className="w-6 md:w-7 h-6 md:h-7" />
 							</div>
 							<Link href="mailto:obiefunakelechukwu@gmail.com">
 								obiefunakelechukwu@gmail.com
@@ -72,7 +85,10 @@ const Contact = () => {
 
 					<ContactForm />
 				</div>
-				<div className="hidden w-1/2 flex-col gap-4 lg:flex">
+				<div
+					data-aos="fade-left"
+					className="hidden w-1/2 flex-col gap-4 lg:flex"
+				>
 					<Image
 						src="/KC.jpeg"
 						width={150}

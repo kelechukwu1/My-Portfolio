@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import SpringyText from "./springy-text/SpringyText";
 import PrimaryButton from "./PrimaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import { motion } from "framer-motion";
 // import Lottie from "react-lottie";
 // import codingBoy from "../../public/lottie/95348-coding-boy.json";
@@ -17,6 +20,15 @@ import PrimaryButton from "./PrimaryButton";
 // };
 
 const AboutFew = () => {
+	//aos useEffect hook
+	useEffect(() => {
+		AOS.init({
+			duration: 750,
+			offset: 0,
+			once: true,
+			anchorPlacement: "top-bottom",
+		});
+	}, []);
 	return (
 		<>
 			<div className="h-full px-4 md:px-24 lg:pb-10 lg:pt-5 flex items-center">
@@ -31,16 +43,22 @@ const AboutFew = () => {
 						/>
 					</div>
 					<div className="lg:mt-[9rem] xl:mt-0 xl:flex xl:items-center">
-						<div className="text-gray-300 hidden lg:block">
+						<div data-aos="fade-up" className="text-gray-300 hidden lg:block">
 							<div className="flex font text-center justify-center lg:justify-start lg:text-5xl xl:text-6xl text-2xl font-black">
-								<SpringyText text="Kelechukwu getLinkedAIgGr I.O" />
+								<SpringyText text="Kelechukwu I.O" />
 							</div>
-							<div className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start font">
+							<div
+								data-aos="fade-up"
+								className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start font"
+							>
 								I'm a creative Frontend Developer passionate about converting
 								ideas into standard and scalable products.
 							</div>
 
-							<div className="hidden lg:block mt-8 lg:justify-start">
+							<div
+								data-aos="fade-up"
+								className="hidden lg:block mt-8 lg:justify-start"
+							>
 								<Link href={"/about"}>
 									<button className="text-center px-12 py-6 rounded-full bg-stone-800 hover:bg-blue-700 transition duration-500">
 										More About Me
@@ -51,11 +69,17 @@ const AboutFew = () => {
 
 						{/* small screen */}
 						<div className="lg:hidden mt-20 justify-center">
-							<div className="flex text-3xl mb-5 md:text-4xl font-black justify-center text-center">
+							<div
+								data-aos="fade-down"
+								className="flex text-3xl mb-5 md:text-4xl font-black justify-center text-center"
+							>
 								<SpringyText text="A Little About Me" />
 							</div>
 
-							<div className="flex mb-10 text-muted-main fluid-lg md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300  ">
+							<div
+								data-aos="fade-up"
+								className="flex mb-10 text-muted-main fluid-lg md:text-[1.1rem] text-center text-muted-main fluid-lg text-gray-300  "
+							>
 								Focused on building awesome and high-quality websites that are
 								also visually appealing and easy to use. I have a strong
 								foundation in HTML, CSS, and JavaScript, and I'm proficient in
@@ -64,7 +88,7 @@ const AboutFew = () => {
 								front-end technologies.
 							</div>
 
-							<div className="flex justify-center md:mt-20">
+							<div data-aos="fade-up" className="flex justify-center md:mt-20">
 								<Link className="mx-auto" href={"/about"}>
 									<PrimaryButton
 										name="More About Me"
@@ -76,7 +100,7 @@ const AboutFew = () => {
 						</div>
 					</div>
 
-					<div className="hidden lg:block">
+					<div data-aos="fade-left" className="hidden lg:block">
 						<Image
 							src={"/KC.jpeg"}
 							width={500}

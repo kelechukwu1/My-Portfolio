@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 // import { Chip } from "../../components";
 // import { useCursorContext } from "../../hooks";
 import Link from "next/link";
@@ -8,12 +8,23 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import SpringyText from "./springy-text/SpringyText";
 import PrimaryButton from "./PrimaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // interface ProjectCardProps {
 // 	proj: ProjectProps;
 // }
 
 const ProjectCard = () => {
+	//aos useEffect hook
+	useEffect(() => {
+		AOS.init({
+			duration: 750,
+			offset: 0,
+			once: true,
+			anchorPlacement: "top-bottom",
+		});
+	}, []);
 	const projects = [
 		{
 			id: 1,
@@ -52,7 +63,7 @@ const ProjectCard = () => {
 			{/* large screen design */}
 			<div className="hidden lg:block">
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-right" className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
 							alt={"setup screenshot"}
@@ -67,7 +78,7 @@ const ProjectCard = () => {
 							height={500}
 						/>
 					</div>
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 mb-5">01</div>
 							<div className="text-gray-100 font-bold text-3xl">
@@ -112,7 +123,7 @@ const ProjectCard = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-right" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 text-end mb-5">02</div>
 							<div className="text-gray-100 font-bold text-3xl text-end">
@@ -152,7 +163,7 @@ const ProjectCard = () => {
 							</div>
 						</div>
 					</div>
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-left" className="justify-end col-span-2">
 						<Image
 							src={"/remotefix.png"}
 							alt={"setup screenshot"}
@@ -177,7 +188,7 @@ const ProjectCard = () => {
 							{/* mobile design */}
 							<div className="lg:hidden mb-20">
 								<div className="items-center justify-center">
-									<div>
+									<div data-aos="fade-down">
 										<Image
 											src={project.image}
 											alt={`${project.name} screenshot`}
@@ -192,7 +203,7 @@ const ProjectCard = () => {
 											height={10}
 										/>
 									</div>
-									<div className="space-y-3 col-span-1 mt-5">
+									<div data-aos="fade-up" className="space-y-3 col-span-1 mt-5">
 										<div className="flex text-md text-gray-300 items-center gap-1">
 											{`0${project.id}`}
 											<span className="text-gray-100 text-xl font-semibold">
@@ -235,7 +246,7 @@ const ProjectCard = () => {
 				</li>
 			</ul>
 
-			<div className="flex justify-center mt-10 md:mt-20">
+			<div data-aos="fade-up" className="flex justify-center mt-10 md:mt-20">
 				<Link className="mx-auto" href={"/projects"}>
 					<PrimaryButton
 						name="Projects Archive"
