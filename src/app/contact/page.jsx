@@ -4,7 +4,12 @@ import ContactForm from "@/components/ContactForm";
 import TwLink from "@/components/tw-link/TwLink";
 import Section from "@/components/section/Section";
 import SpringyText from "@/components/springy-text/SpringyText";
-import { RiPhoneLine, RiInbox2Line, RiUserLocationLine } from "react-icons/ri";
+import {
+	RiPhoneLine,
+	RiInbox2Line,
+	RiUserLocationLine,
+	RiMailLine,
+} from "react-icons/ri";
 import Link from "next/link";
 
 const socialsArr = [
@@ -50,7 +55,7 @@ const Contact = () => {
 							<div>
 								<RiUserLocationLine className="w-7 md:w-8 h-7 md:h-8" />
 							</div>
-							<div>Lagos, Nigeria</div>
+							<div className="font">Lagos, Nigeria</div>
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
@@ -60,7 +65,7 @@ const Contact = () => {
 						</div>
 						<div className="flex gap-4 items-center">
 							<div>
-								<RiInbox2Line className="w-7 md:w-8 h-7 md:h-8" />
+								<RiMailLine className="w-7 md:w-8 h-7 md:h-8" />
 							</div>
 							<Link href="mailto:obiefunakelechukwu@gmail.com">
 								obiefunakelechukwu@gmail.com
