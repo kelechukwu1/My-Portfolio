@@ -38,7 +38,7 @@ const AboutFew = () => {
 							src={"/KC.jpeg"}
 							width={350}
 							height={200}
-							alt="setup-image"
+							alt="kelechukwu's picture"
 							className="w-auto h-auto rounded-md"
 						/>
 					</div>
@@ -105,7 +105,7 @@ const AboutFew = () => {
 							src={"/KC.jpeg"}
 							width={500}
 							height={100}
-							alt="setup-image"
+							alt="kelechukwu's picture"
 							className="rounded-xl"
 						/>
 					</div>

@@ -27,7 +27,7 @@ const page = () => {
 									src={"/KC.jpeg"}
 									width={350}
 									height={200}
-									alt="setup-image"
+									alt="kelechukwu's picture"
 									className="w-auto h-auto rounded-md"
 								/>
 							</div>
@@ -68,11 +68,12 @@ const page = () => {
 							<div className="mb-10 md:text-[1.1rem] text-muted-main fluid-lg text-gray-300">
 								Hello! My name is{" "}
 								<span className="font-semibold">Kelechukwu</span>, I enjoy
-								converting ideas into real life productsand building solutions
+								converting ideas into real life products and building solutions
 								that runs on the internet. Over the last 3 years, I've developed
-								products for businesses around the world, providing solutions on
-								small business websites to enterprise web applications with
-								focus on quality, accessibility and fast user experiences.
+								products for businesses around the world, built projects from
+								conceptualization to deployment, providing solutions on small
+								business websites to enterprise web applications with focus on
+								quality, accessibility and fast user experiences.
 							</div>
 
 							<div className="mb-10 md:text-[1.1rem] text-muted-main fluid-lg text-gray-300">
@@ -111,7 +112,7 @@ const page = () => {
 							src={"/KC.jpeg"}
 							width={500}
 							height={100}
-							alt="setup-image"
+							alt="kelechukwu's picture"
 							className="rounded-xl"
 						/>
 					</div>

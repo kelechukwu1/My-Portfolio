@@ -66,7 +66,7 @@ const ProjectCard = () => {
 					<div data-aos="fade-right" className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md
@@ -166,7 +166,7 @@ const ProjectCard = () => {
 					<div data-aos="fade-left" className="justify-end col-span-2">
 						<Image
 							src={"/remotefix.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md

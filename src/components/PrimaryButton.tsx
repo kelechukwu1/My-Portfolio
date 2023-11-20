@@ -1,6 +1,6 @@
 "use client";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 interface PrimaryButtonProps {
 	name: string;

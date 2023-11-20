@@ -72,7 +72,7 @@ const Projects = () => {
 					<div className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md
@@ -174,7 +174,7 @@ const Projects = () => {
 					<div className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md
@@ -192,7 +192,7 @@ const Projects = () => {
 					<div className="justify-end col-span-2">
 						<Image
 							src={"/remotefix.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md
@@ -290,7 +290,7 @@ const Projects = () => {
 					<div className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
-							alt={"setup screenshot"}
+							alt={"project screenshot"}
 							className="
                 pointer-events-none
                 rounded-md
@@ -376,66 +376,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-{
-	/* {projects.map((project) => (
-				<ul className="hidden lg:block">
-					<li id={project.id}>
-						<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-							<div className="justify-end col-span-2">
-								<Image
-									src={project.image}
-									alt={"setup screenshot"}
-									className="
-                pointer-events-none
-                rounded-md
-                duration-400
-                ease-in-out
-                group-hover:scale-105
-                w-full h-[20rem]"
-									width={900}
-									height={10}
-								/>
-							</div>
-							<div className="space-y-5 col-span-1">
-								<div className="flex lg:gap-3 items-center">
-									<div className="text-xl text-gray-300">01</div>
-									<div className="text-gray-100 font-bold text-3xl">
-										{project.name}
-									</div>
-								</div>
-
-								<div className="text-gray-300 text-muted-main fluid-lg">
-									<div>{project.description}</div>
-									<div>Stack/Tools : {project.tools}</div>
-								</div>
-								<div className="flex gap-5 items-center">
-									<div>
-										<Link
-											// onMouseEnter={() => githubProjectCursor()}
-											// onMouseLeave={() => projectCursor()}
-											rel="noopener noreferrer"
-											target="_blank"
-											href={project.github_link}
-										>
-											<AiOutlineGithub className="text-3xl text-gray-200" />
-										</Link>
-									</div>
-									<div>
-										<Link
-											// onMouseEnter={() => githubProjectCursor()}
-											// onMouseLeave={() => projectCursor()}
-											rel="noopener noreferrer"
-											target="_blank"
-											href={project.live_link}
-										>
-											<PiArrowSquareOutBold className="text-3xl text-gray-200" />
-										</Link>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			))} */
-}
