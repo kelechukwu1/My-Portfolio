@@ -36,7 +36,7 @@ const page = () => {
 								<div className="flex justify-center text-center border border-blue-500 rounded-xl">
 									<Link
 										href={
-											"https://drive.google.com/file/d/13totF7lsl0a1Zil80c20sovjmm6mhjCt/view?usp=drivesdkq.pdf"
+											"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
 										}
 										download
 										className="space-y-1 p-4"
@@ -44,7 +44,7 @@ const page = () => {
 										<div className="flex justify-center">
 											<RiArticleFill className="w-7 md:w-8 h-7 md:h-8" />
 										</div>
-										<div>Resume</div>
+										<div>My Resume</div>
 									</Link>
 								</div>
 								<div className="flex justify-center text-center border border-blue-500 rounded-xl">
