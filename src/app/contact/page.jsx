@@ -38,7 +38,7 @@ const Contact = () => {
 	));
 
 	return (
-		<Section className="py-20 mx-4 md:mx-24 md:py-24 flex items-center lg:text-start lg:justify-start lg:items-start">
+		<Section className="pb-20 md:pb-0 mx-4 md:mx-24 md:py-24 flex items-center lg:text-start lg:justify-start lg:items-start">
 			<main className="flex gap-16">
 				<div
 					data-aos="fade-right"
