@@ -50,10 +50,10 @@ const ProjectCard = () => {
 	];
 
 	return (
-		<div className="mx-4 md:mx-24 md:py-24 md:mb-10 items-center">
+		<div className="mx-4 md:mx-24 mb-10 md:py-24 items-center">
 			<div className="mb-10">
 				<div className="font flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
-					<SpringyText text="My ProjectsgetlinkedAI" />
+					<SpringyText text="My Projects" />
 				</div>
 				<div className="flex mt-2 md:mt-5 md:mb-10 text-muted-main fluid-lg text-center justify-center lg:text-start lg:justify-start text-gray-300  ">
 					Each one is unique. Take a look.
@@ -186,7 +186,7 @@ const ProjectCard = () => {
 					{projects.map((project) => (
 						<div>
 							{/* mobile design */}
-							<div className="lg:hidden mb-20">
+							<div className="lg:hidden mb-16">
 								<div className="items-center justify-center">
 									<div data-aos="fade-down">
 										<Image

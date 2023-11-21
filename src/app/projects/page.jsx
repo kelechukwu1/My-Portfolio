@@ -1,12 +1,23 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import SpringyText from "@/components/springy-text/SpringyText";
 import Image from "next/image";
 import { AiOutlineGithub } from "react-icons/ai";
 import { PiArrowSquareOutBold } from "react-icons/pi";
-// import supabase from "../../config/supabaseClient";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+	//aos useEffect hook
+	useEffect(() => {
+		AOS.init({
+			duration: 750,
+			offset: 0,
+			once: true,
+			anchorPlacement: "top-bottom",
+		});
+	}, []);
 	const projects = [
 		{
 			id: 1,
@@ -57,7 +68,7 @@ const Projects = () => {
 		<div className="mx-4 md:mx-24 md:pb-24 md:mb-10 items-center">
 			{/* <Navbar /> */}
 
-			<div className="mb-16">
+			<div data-aos="fade-down" className="mb-16">
 				<div className="justify-start mt-5 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
 					<SpringyText text="My Projects" />
 				</div>
@@ -69,7 +80,7 @@ const Projects = () => {
 			{/* large screen design */}
 			<div className="hidden lg:block">
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-right" className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
 							alt={"project screenshot"}
@@ -84,7 +95,7 @@ const Projects = () => {
 							height={10}
 						/>
 					</div>
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 mb-5">01</div>
 							<div className="text-gray-100 font-bold text-3xl">Fly ASAP</div>
@@ -93,7 +104,7 @@ const Projects = () => {
 						<div className="text-gray-300 text-muted-main fluid-lg">
 							<div>
 								This is a web application which allows users to book and pay for
-								thier flights seemlessly.
+								their flights seamlessly.
 							</div>
 							<div>
 								Stack/Tools : NextJs, TailwindCss, Redux Toolkit, Firebase
@@ -129,7 +140,7 @@ const Projects = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-right" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 mb-5">02</div>
 							<div className="text-gray-100 font-bold text-3xl">
@@ -171,7 +182,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</div>
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-left" className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
 							alt={"project screenshot"}
@@ -189,7 +200,7 @@ const Projects = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-right" className="justify-end col-span-2">
 						<Image
 							src={"/remotefix.png"}
 							alt={"project screenshot"}
@@ -204,7 +215,7 @@ const Projects = () => {
 							height={10}
 						/>
 					</div>
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 mb-5">03</div>
 							<div className="text-gray-100 font-bold text-3xl">
@@ -249,7 +260,7 @@ const Projects = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div className="space-y-5 col-span-1">
+					<div data-aos="fade-right" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
 							<div className="text-xl text-gray-300 mb-5">04</div>
 							<div className="text-gray-100 font-bold text-3xl">Abeg Help</div>
@@ -287,7 +298,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</div>
-					<div className="justify-end col-span-2">
+					<div data-aos="fade-right" className="justify-end col-span-2">
 						<Image
 							src={"/getlinked.png"}
 							alt={"project screenshot"}
@@ -312,7 +323,7 @@ const Projects = () => {
 							{/* mobile design */}
 							<div className="lg:hidden mb-20">
 								<div className="items-center justify-center">
-									<div>
+									<div data-aos="fade-right">
 										<Image
 											src={project.image}
 											alt={`${project.name} screenshot`}
@@ -327,7 +338,10 @@ const Projects = () => {
 											height={10}
 										/>
 									</div>
-									<div className="space-y-3 col-span-1 mt-5">
+									<div
+										data-aos="fade-left"
+										className="space-y-3 col-span-1 mt-5"
+									>
 										<div className="flex text-md text-gray-300 items-center gap-1">
 											{`0${project.id}`}
 											<span className="text-gray-100 text-xl font-semibold">
