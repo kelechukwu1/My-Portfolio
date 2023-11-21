@@ -70,7 +70,7 @@ const AboutFew = () => {
 						<div className="lg:hidden mt-20 justify-center">
 							<div
 								data-aos="fade-down"
-								className="flex text-3xl mb-5 md:text-4xl font-black justify-center text-center"
+								className="font flex text-3xl mb-5 md:text-4xl font-black justify-center text-center"
 							>
 								<SpringyText text="A Little About Me" />
 							</div>
