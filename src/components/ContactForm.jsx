@@ -199,7 +199,7 @@ const ContactForm = () => {
 				btnType="submit"
 				name={"Send Message"}
 				type={isSending ? "loading" : "solid"}
-				className="mx-auto  md:mx-0 md:ml-auto"
+				className="font mx-auto md:mx-0 md:ml-auto"
 			/>
 		</form>
 	);

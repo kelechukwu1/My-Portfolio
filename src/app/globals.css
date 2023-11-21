@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 @font-face {
 	font-family: "clash-display";
-	src: url("../../public/ClashDisplay-Variable.ttf") format("truetype");
+	src: url("../../public/fonts/ClashDisplay-Variable.ttf") format("truetype");
 	font-weight: 800;
 	font-display: swap;
 }

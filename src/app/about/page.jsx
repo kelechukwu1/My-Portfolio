@@ -7,7 +7,7 @@ import { RiArticleFill, RiGithubLine } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const page = () => {
+const About = () => {
 	//aos useEffect hook
 	useEffect(() => {
 		AOS.init({
@@ -23,7 +23,7 @@ const page = () => {
 				<div className="hidden lg:block">
 					<div className="lg:grid lg:grid-cols-2 lg:gap-20 items-center mb-28">
 						<div data-aos="fade-right" className="text-gray-300 space-y-10">
-							<div className="flex text-center justify-start lg:text-5xl xl:text-6xl font-black">
+							<div className="font flex text-center justify-start lg:text-5xl xl:text-6xl font-black">
 								<SpringyText text="Kelechukwu I.O" />
 							</div>
 
@@ -72,7 +72,7 @@ const page = () => {
 						<div className="grid grid-cols-4 gap-20">
 							<div
 								data-aos="fade-up"
-								className="col-span-1 mb-10 text-3xl space-y-3"
+								className="font col-span-1 mb-10 text-3xl space-y-3"
 							>
 								<SpringyText text="MY" />
 								<SpringyText text="STORY" />
@@ -84,8 +84,8 @@ const page = () => {
 									className="mb-10 md:text-[1.1rem] text-muted-main fluid-lg text-gray-300"
 								>
 									Hello! My name is{" "}
-									<span className="font-semibold">Kelechukwu</span>, I enjoy
-									converting ideas into real life products and building
+									<span className="font font-semibold">Kelechukwu</span>, I
+									enjoy converting ideas into real life products and building
 									solutions that runs on the internet. Over the last 3 years,
 									I've developed products for businesses around the world, built
 									projects from conceptualization to deployment, providing
@@ -117,13 +117,13 @@ const page = () => {
 									data-aos="fade-up"
 									className="mb-10 text-muted-main fluid-lg text-gray-300 space-y-2"
 								>
-									<div className="font-semibold">What I work with:</div>
+									<div className="font font-semibold">What I work with:</div>
 									<div>
-										<span className="font-semibold">Languages:</span> Html,Css,
-										Javascript, Typescript
+										<span className="font font-semibold">Languages:</span>{" "}
+										Html,Css, Javascript, Typescript
 									</div>
 									<div>
-										<span className="font-semibold">Technologies:</span>{" "}
+										<span className="font font-semibold">Technologies:</span>{" "}
 										React.js, NextJs, Tailwind, Bootstrap, Redux-toolkit,
 										Firebase, Git, Vercel, Netlify
 									</div>
@@ -177,7 +177,7 @@ const page = () => {
 
 					<div
 						data-aos="fade-up"
-						className="text-2xl mb-5 md:text-4xl space-y-3"
+						className="font text-2xl mb-5 md:text-4xl space-y-3"
 					>
 						<SpringyText text="MY" />
 						<SpringyText text="STORY" />
@@ -187,11 +187,12 @@ const page = () => {
 						data-aos="fade-up"
 						className="mb-10 md:text-[1.1rem] text-muted-main fluid-lg text-gray-300"
 					>
-						Hello! My name is <span className="font-semibold">Kelechukwu</span>,
-						I enjoy converting ideas into real life products and building
-						solutions that runs on the internet. Over the last 3 years, I've
-						developed products for businesses around the world, built projects
-						from conceptualization to deployment, providing solutions on small
+						Hello! My name is{" "}
+						<span className="font font-semibold">Kelechukwu</span>, I enjoy
+						converting ideas into real life products and building solutions that
+						runs on the internet. Over the last 3 years, I've developed products
+						for businesses around the world, built projects from
+						conceptualization to deployment, providing solutions on small
 						business websites to enterprise web applications with focus on
 						quality, accessibility and fast user experiences.
 					</div>
@@ -219,15 +220,15 @@ const page = () => {
 						data-aos="fade-up"
 						className="mb-10 text-muted-main fluid-lg text-gray-300 space-y-2"
 					>
-						<div className="font-semibold">What I work with:</div>
+						<div className="font-semibold font">What I work with:</div>
 						<div>
-							<span className="font-semibold">Languages:</span> Html,Css,
+							<span className="font font-semibold">Languages:</span> Html,Css,
 							Javascript, Typescript
 						</div>
 						<div>
-							<span className="font-semibold">Technologies:</span> React.js,
-							NextJs, Tailwind, Bootstrap, Redux-toolkit, Firebase, Git, Vercel,
-							Netlify
+							<span className="font font-semibold">Technologies:</span>{" "}
+							React.js, NextJs, Tailwind, Bootstrap, Redux-toolkit, Firebase,
+							Git, Vercel, Netlify
 						</div>
 					</div>
 				</div>
@@ -236,4 +237,4 @@ const page = () => {
 		</>
 	);
 };
-export default page;
+export default About;

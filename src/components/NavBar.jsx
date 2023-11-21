@@ -131,7 +131,7 @@ const Navbar = () => {
 									className="justify-center items-center flex"
 								>
 									<div
-										className={`hover:bg-stone-900 px-6 py-3 rounded-sm w-full ${
+										className={`font hover:bg-stone-900 px-6 py-3 rounded-sm w-full ${
 											pathname.startsWith(link) ? "" : ""
 										}`}
 									>

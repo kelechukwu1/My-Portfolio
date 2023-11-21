@@ -4,7 +4,7 @@ import Link from "next/link";
 import SpringyText from "@/components/springy-text/SpringyText";
 import Image from "next/image";
 import { AiOutlineGithub } from "react-icons/ai";
-import { PiArrowSquareOutBold } from "react-icons/pi";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -62,14 +62,10 @@ const Projects = () => {
 		},
 	];
 
-	const user = process.env.EMAIL_ADDRESS;
-	console.log(user);
 	return (
 		<div className="mx-4 md:mx-24 md:pb-24 md:mb-10 items-center">
-			{/* <Navbar /> */}
-
 			<div data-aos="fade-down" className="mb-16">
-				<div className="justify-start mt-5 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
+				<div className="font justify-start mt-5 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
 					<SpringyText text="My Projects" />
 				</div>
 				<div className="text-start mt-2 md:mt-5 md:mb-10 text-muted-main fluid-lg text-gray-300">
@@ -97,8 +93,10 @@ const Projects = () => {
 					</div>
 					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 mb-5">01</div>
-							<div className="text-gray-100 font-bold text-3xl">Fly ASAP</div>
+							<div className="text-xl text-gray-300 mb-5 font">01</div>
+							<div className="text-gray-100 font-bold text-3xl font">
+								Fly ASAP
+							</div>
 						</div>
 
 						<div className="text-gray-300 text-muted-main fluid-lg">
@@ -107,7 +105,8 @@ const Projects = () => {
 								their flights seamlessly.
 							</div>
 							<div>
-								Stack/Tools : NextJs, TailwindCss, Redux Toolkit, Firebase
+								<span className="font-semibold font">Stack/Tools:</span> NextJs,
+								TailwindCss, Redux Toolkit, Firebase
 							</div>
 						</div>
 						<div className="flex gap-5 items-center">
@@ -132,7 +131,7 @@ const Projects = () => {
 									target="_blank"
 									href={"https://www.flight-reservation-system.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -140,22 +139,25 @@ const Projects = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
-					<div data-aos="fade-right" className="space-y-5 col-span-1">
-						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 mb-5">02</div>
-							<div className="text-gray-100 font-bold text-3xl">
-								GetLinkedAI
+					<div>
+						<div data-aos="fade-right" className="space-y-5 col-span-1">
+							<div className="lg:gap-3 items-center">
+								<div className="text-xl text-gray-300 mb-5 font">02</div>
+								<div className="text-gray-100 font-bold text-3xl font">
+									GetLinkedAI
+								</div>
 							</div>
-						</div>
 
-						<div className="text-gray-300 text-muted-main fluid-lg">
-							<div>
-								A 5-days hackathon project I participated, built and completed
-								with Ayoola my good friend, we ensured maximum responsiveness
-								and built beautiful components and pages, also played around
-								with getLinkedAI API.
+							<div className="text-gray-300 text-muted-main fluid-lg">
+								<div>
+									A 5-days hackathon project I participated, built and completed
+									with Ayoola my good friend, we ensured maximum responsiveness
+									and built beautiful components and pages, also played around
+									with getLinkedAI API.
+								</div>
+								<span className="font-semibold font">Stack/Tools:</span> NextJs,
+								TailwindCss, GSAP, AOS.js
 							</div>
-							<div>Stack/Tools : NextJs, TailwindCss, GSAP, AOS.js</div>
 						</div>
 						<div className="flex gap-5 items-center">
 							<div>
@@ -177,7 +179,7 @@ const Projects = () => {
 									target="_blank"
 									href={"https://www.getlinked-ai-psi.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -217,8 +219,8 @@ const Projects = () => {
 					</div>
 					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 mb-5">03</div>
-							<div className="text-gray-100 font-bold text-3xl">
+							<div className="text-xl text-gray-300 mb-5 font">03</div>
+							<div className="text-gray-100 font-bold text-3xl font">
 								Remote Mobile Fix
 							</div>
 						</div>
@@ -229,7 +231,8 @@ const Projects = () => {
 								Nigeria) to locate phone repairers close to thier location.
 							</div>
 							<div>
-								Stack/Tools : NextJs, TailwindCss, Redux Toolkit, Firebase
+								<span className="font-semibold font">Stack/Tools:</span> NextJs,
+								TailwindCss, Redux Toolkit, Firebase
 							</div>
 						</div>
 						<div className="flex gap-5 items-center">
@@ -252,7 +255,7 @@ const Projects = () => {
 									target="_blank"
 									href={"https://www.remote-mobile-fix.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -262,8 +265,10 @@ const Projects = () => {
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
 					<div data-aos="fade-right" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 mb-5">04</div>
-							<div className="text-gray-100 font-bold text-3xl">Abeg Help</div>
+							<div className="text-xl text-gray-300 mb-5 font">04</div>
+							<div className="text-gray-100 font-bold text-3xl font">
+								Abeg Help
+							</div>
 						</div>
 
 						<div className="text-gray-300 text-muted-main fluid-lg">
@@ -271,7 +276,10 @@ const Projects = () => {
 								This is a community project I'm participating actively on
 								currently to solve issues with fund raising in Nigeria.
 							</div>
-							<div>Stack/Tools : NextJs, TailwindCss</div>
+							<div>
+								<span className="font-semibold font">Stack/Tools:</span> NextJs,
+								TailwindCss
+							</div>
 						</div>
 						<div className="flex gap-5 items-center">
 							<div>
@@ -293,7 +301,7 @@ const Projects = () => {
 									target="_blank"
 									href={"https://www.abeg-help.vercel.app"}
 								>
-									<PiArrowSquareOutBold className="text-3xl text-gray-200" />
+									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
 							</div>
 						</div>
@@ -316,75 +324,73 @@ const Projects = () => {
 				</div>
 			</div>
 
-			<ul>
-				<li>
-					{projects.map((project) => (
-						<div>
-							{/* mobile design */}
-							<div className="lg:hidden mb-20">
-								<div className="items-center justify-center">
-									<div data-aos="fade-right">
-										<Image
-											src={project.image}
-											alt={`${project.name} screenshot`}
-											className="
+			<div>
+				{projects.map((project) => (
+					<div key={project.id}>
+						{/* mobile design */}
+						<div className="lg:hidden mb-20">
+							<div className="items-center justify-center">
+								<div data-aos="fade-right">
+									<Image
+										src={project.image}
+										alt={`${project.name} screenshot`}
+										className="
                         pointer-events-none
                         rounded-sm
                         duration-400
                         ease-in-out
                         group-hover:scale-105
                         w-full h-[100%]"
-											width={900}
-											height={10}
-										/>
+										width={900}
+										height={10}
+									/>
+								</div>
+								<div data-aos="fade-left" className="space-y-3 col-span-1 mt-5">
+									<div className="flex text-md font text-gray-300 items-center gap-1">
+										{`0${project.id}`}
+										<span className="text-gray-100 font text-xl font-semibold">
+											{project.name}
+										</span>
 									</div>
-									<div
-										data-aos="fade-left"
-										className="space-y-3 col-span-1 mt-5"
-									>
-										<div className="flex text-md text-gray-300 items-center gap-1">
-											{`0${project.id}`}
-											<span className="text-gray-100 text-xl font-semibold">
-												{project.name}
-											</span>
+									<div className="text-gray-300 text-muted-main fluid-lg">
+										<div>{project.description}</div>
+										<div>
+											<span className="font-semibold font">Stack/Tools:</span>{" "}
+											{project.tools}
 										</div>
-										<div className="text-gray-300 text-muted-main fluid-lg">
-											<div className=" ">{project.description}</div>
-											<div className=" ">Stack/Tools : {project.tools}</div>
+									</div>
+									<div className="flex gap-5 items-center">
+										<div>
+											<Link
+												// onMouseEnter={() => githubProjectCursor()}
+												// onMouseLeave={() => projectCursor()}
+												rel="noopener noreferrer"
+												target="_blank"
+												href={"https://www.github.com/kelechukwu1"}
+											>
+												<AiOutlineGithub className="text-3xl text-gray-200" />
+											</Link>
 										</div>
-										<div className="flex gap-5 items-center">
-											<div>
-												<Link
-													// onMouseEnter={() => githubProjectCursor()}
-													// onMouseLeave={() => projectCursor()}
-													rel="noopener noreferrer"
-													target="_blank"
-													href={"https://www.github.com/kelechukwu1"}
-												>
-													<AiOutlineGithub className="text-3xl text-gray-200" />
-												</Link>
-											</div>
-											<div>
-												<Link
-													// onMouseEnter={() => githubProjectCursor()}
-													// onMouseLeave={() => projectCursor()}
-													rel="noopener noreferrer"
-													target="_blank"
-													href={
-														"https://www.flight-reservation-system.vercel.app"
-													}
-												>
-													<PiArrowSquareOutBold className="text-3xl text-gray-200" />
-												</Link>
-											</div>
+										<div>
+											<Link
+												// onMouseEnter={() => githubProjectCursor()}
+												// onMouseLeave={() => projectCursor()}
+												rel="noopener noreferrer"
+												target="_blank"
+												href={
+													"https://www.flight-reservation-system.vercel.app"
+												}
+											>
+												<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
+											</Link>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					))}
-				</li>
-			</ul>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

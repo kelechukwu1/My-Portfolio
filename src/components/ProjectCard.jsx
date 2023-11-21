@@ -80,8 +80,8 @@ const ProjectCard = () => {
 					</div>
 					<div data-aos="fade-left" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 mb-5">01</div>
-							<div className="text-gray-100 font-bold text-3xl">
+							<div className="font text-xl text-gray-300 mb-5">01</div>
+							<div className="text-gray-100 font-bold text-3xl font">
 								GetLinkedAI
 							</div>
 						</div>
@@ -89,9 +89,9 @@ const ProjectCard = () => {
 						<div className="text-gray-300 text-muted-main fluid-lg">
 							<div>
 								A 5-days hackathon project I participated, built and completed
-								with Ayoola my good friend, we ensured maximum responsiveness
-								and built beautiful components and pages, also played around
-								with getLinkedAI API.
+								together with Ayoola my good friend, we ensured maximum
+								responsiveness and built beautiful components and pages, also
+								played around with getLinkedAI API.
 							</div>
 							<div>Stack/Tools : NextJs, TailwindCss, GSAP, AOS.js</div>
 						</div>
@@ -125,8 +125,8 @@ const ProjectCard = () => {
 				<div className="grid lg:grid-cols-3 items-center justify-center gap-16 mb-20">
 					<div data-aos="fade-right" className="space-y-5 col-span-1">
 						<div className="lg:gap-3 items-center">
-							<div className="text-xl text-gray-300 text-end mb-5">02</div>
-							<div className="text-gray-100 font-bold text-3xl text-end">
+							<div className="font text-xl text-gray-300 text-end mb-5">02</div>
+							<div className="font text-gray-100 font-bold text-3xl text-end">
 								RemoteMobile Fix
 							</div>
 						</div>
@@ -181,77 +181,75 @@ const ProjectCard = () => {
 				</div>
 			</div>
 
-			<ul>
-				<li>
-					{projects.map((project) => (
-						<div>
-							{/* mobile design */}
-							<div className="lg:hidden mb-16">
-								<div className="items-center justify-center">
-									<div data-aos="fade-down">
-										<Image
-											src={project.image}
-											alt={`${project.name} screenshot`}
-											className="
+			<div>
+				{projects.map((project) => (
+					<div key={project.name}>
+						{/* mobile design */}
+						<div className="lg:hidden mb-16">
+							<div className="items-center justify-center">
+								<div data-aos="fade-down">
+									<Image
+										src={project.image}
+										alt={`${project.name} screenshot`}
+										className="
                         pointer-events-none
                         rounded-sm
                         duration-400
                         ease-in-out
                         group-hover:scale-105
                         w-full h-[100%]"
-											width={900}
-											height={10}
-										/>
+										width={900}
+										height={10}
+									/>
+								</div>
+								<div data-aos="fade-up" className="space-y-3 col-span-1 mt-5">
+									<div className="font flex text-md text-gray-300 items-center gap-1">
+										{`0${project.id}`}
+										<span className="font text-gray-100 text-xl font-semibold">
+											{project.name}
+										</span>
 									</div>
-									<div data-aos="fade-up" className="space-y-3 col-span-1 mt-5">
-										<div className="flex text-md text-gray-300 items-center gap-1">
-											{`0${project.id}`}
-											<span className="text-gray-100 text-xl font-semibold">
-												{project.name}
-											</span>
+									<div className="text-gray-300 text-muted-main fluid-lg">
+										<div className=" ">{project.description}</div>
+										<div className=" ">Stack/Tools : {project.tools}</div>
+									</div>
+									<div className="flex gap-5 items-center">
+										<div>
+											<Link
+												// onMouseEnter={() => githubProjectCursor()}
+												// onMouseLeave={() => projectCursor()}
+												rel="noopener noreferrer"
+												target="_blank"
+												href={project.github_link}
+											>
+												<AiOutlineGithub className="text-3xl text-gray-200" />
+											</Link>
 										</div>
-										<div className="text-gray-300 text-muted-main fluid-lg">
-											<div className=" ">{project.description}</div>
-											<div className=" ">Stack/Tools : {project.tools}</div>
-										</div>
-										<div className="flex gap-5 items-center">
-											<div>
-												<Link
-													// onMouseEnter={() => githubProjectCursor()}
-													// onMouseLeave={() => projectCursor()}
-													rel="noopener noreferrer"
-													target="_blank"
-													href={project.github_link}
-												>
-													<AiOutlineGithub className="text-3xl text-gray-200" />
-												</Link>
-											</div>
-											<div>
-												<Link
-													// onMouseEnter={() => githubProjectCursor()}
-													// onMouseLeave={() => projectCursor()}
-													rel="noopener noreferrer"
-													target="_blank"
-													href={project.live_link}
-												>
-													<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
-												</Link>
-											</div>
+										<div>
+											<Link
+												// onMouseEnter={() => githubProjectCursor()}
+												// onMouseLeave={() => projectCursor()}
+												rel="noopener noreferrer"
+												target="_blank"
+												href={project.live_link}
+											>
+												<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
+											</Link>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					))}
-				</li>
-			</ul>
+					</div>
+				))}
+			</div>
 
 			<div data-aos="fade-up" className="flex justify-center mt-10 md:mt-20">
 				<Link className="mx-auto" href={"/projects"}>
 					<PrimaryButton
 						name="Projects Archive"
 						type="solid"
-						className="mx-auto md:mx-0 md:ml-auto"
+						className="font mx-auto md:mx-0 md:ml-auto"
 					/>
 				</Link>
 			</div>

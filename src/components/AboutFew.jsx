@@ -49,20 +49,19 @@ const AboutFew = () => {
 							</div>
 							<div
 								data-aos="fade-up"
-								className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start font"
+								className="text-gray-300 text-muted-main fluid-lg flex mt-5 justify-center text-center lg:text-start"
 							>
 								I'm a creative Frontend Developer passionate about converting
 								ideas into standard and scalable products.
 							</div>
 
-							<div
-								data-aos="fade-up"
-								className="hidden lg:block mt-8 lg:justify-start"
-							>
-								<Link href={"/about"}>
-									<button className="text-center px-12 py-6 rounded-full bg-stone-800 hover:bg-blue-700 transition duration-500">
-										More About Me
-									</button>
+							<div data-aos="fade-up" className="flex justify-center md:mt-20">
+								<Link className="mx-auto" href={"/about"}>
+									<PrimaryButton
+										name="More About Me"
+										type="solid"
+										className="font mx-auto md:mx-0 md:ml-auto"
+									/>
 								</Link>
 							</div>
 						</div>
@@ -93,7 +92,7 @@ const AboutFew = () => {
 									<PrimaryButton
 										name="More About Me"
 										type="solid"
-										className="mx-auto md:mx-0 md:ml-auto"
+										className="font mx-auto md:mx-0 md:ml-auto"
 									/>
 								</Link>
 							</div>

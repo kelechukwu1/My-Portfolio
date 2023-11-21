@@ -50,7 +50,7 @@ const Contact = () => {
             text-center justify-center items-center lg:text-start lg:justify-start lg:items-start"
 					>
 						<SpringyText
-							className="text-3xl md:text-4xl lg:text-5xl lg:text-start lg:justify-start lg:items-start font-semibold"
+							className="font text-3xl md:text-4xl lg:text-5xl lg:text-start lg:justify-start lg:items-start font-semibold"
 							text="Get In Touch!"
 						/>
 						<h1 className="text-center lg:text-start lg:justify-start text-gray-300 md:px-0 lg:pr-20 xl:pr-44 text-muted-main fluid-lg">
