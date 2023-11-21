@@ -33,31 +33,27 @@ const page = () => {
 							</div>
 
 							<div className="grid grid-cols-2 gap-4 justify-around">
-								<div className="flex justify-center text-center border border-blue-500 rounded-xl">
-									<Link
-										href={
-											"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
-										}
-										download
-										className="space-y-1 p-4"
-									>
+								<Link
+									href={
+										"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
+									}
+									download
+								>
+									<div className="flex justify-center text-center border border-blue-500 rounded-xl space-y-1 py-8">
 										<div className="flex justify-center">
 											<RiArticleFill className="w-7 md:w-8 h-7 md:h-8" />
 										</div>
 										<div>My Resume</div>
-									</Link>
-								</div>
-								<div className="flex justify-center text-center border border-blue-500 rounded-xl">
-									<Link
-										href={"https://github.com/kelechukwu1"}
-										className="space-y-1 p-4"
-									>
+									</div>
+								</Link>
+								<Link href={"https://github.com/kelechukwu1"}>
+									<div className="flex justify-center text-center border border-blue-500 rounded-xl space-y-1 py-8">
 										<div className="flex justify-center">
 											<RiGithubLine className="w-7 md:w-8 h-7 md:h-8" />
 										</div>
 										<div>My Github</div>
-									</Link>
-								</div>
+									</div>
+								</Link>
 							</div>
 						</div>
 
@@ -150,41 +146,37 @@ const page = () => {
 					</div>
 
 					<div className="grid grid-cols-2 gap-4 justify-around mb-10">
-						<div
-							data-aos="fade-right"
-							className="flex justify-center text-center border border-blue-500 rounded-xl"
+						<Link
+							href={
+								"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
+							}
+							download
 						>
-							<Link
-								href={
-									"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
-								}
-								download
-								className="space-y-1 p-4"
+							<div
+								data-aos="fade-right"
+								className="flex justify-center text-center border border-blue-500 rounded-xl space-y-1 py-6"
 							>
 								<div className="flex justify-center">
 									<RiArticleFill className="w-7 md:w-8 h-7 md:h-8" />
 								</div>
 								<div>My Resume</div>
-							</Link>
-						</div>
-						<div
-							data-aos="fade-left"
-							className="flex justify-center text-center border border-blue-500 rounded-xl"
-						>
-							<Link
-								href={"https://github.com/kelechukwu1"}
-								className="space-y-1 p-4"
+							</div>
+						</Link>
+						<Link href={"https://github.com/kelechukwu1"}>
+							<div
+								data-aos="fade-left"
+								className="flex justify-center text-center border border-blue-500 rounded-xl space-y-1 py-6"
 							>
 								<div className="flex justify-center">
 									<RiGithubLine className="w-7 md:w-8 h-7 md:h-8" />
 								</div>
 								<div>My Github</div>
-							</Link>
-						</div>
+							</div>
+						</Link>
 					</div>
 
 					<div
-						data-aos="fade-down"
+						data-aos="fade-up"
 						className="text-2xl mb-5 md:text-4xl space-y-3"
 					>
 						<SpringyText text="MY" />
