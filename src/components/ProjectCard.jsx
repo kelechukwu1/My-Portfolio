@@ -32,7 +32,7 @@ const ProjectCard = () => {
 			tools: "NextJs, TailwindCss, GSAP, AOS.js",
 			image: "/getlinked.png",
 			github_link: "https://github.com/kelechukwu1/getlinkedAI",
-			live_link: "https://www.getlinked-ai-psi.vercel.app",
+			live_link: "https://getlinked-ai-psi.vercel.app",
 			description:
 				"A 5-days hackathon project I participated, built and completed together with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
 		},
@@ -45,7 +45,7 @@ const ProjectCard = () => {
 			github_link: "https://github.com/kelechukwu1/remote-mobile-fix",
 			description:
 				"This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
-			live_link: "https://www.remote-mobile-fix.vercel.app",
+			live_link: "https://remote-mobile-fix.vercel.app",
 		},
 	];
 

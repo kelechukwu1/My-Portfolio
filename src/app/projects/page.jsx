@@ -55,7 +55,7 @@ const Projects = () => {
 			name: "Abeg Help",
 			tools: "NextJs, TailwindCss",
 			image: "/getlinked.png",
-			github_link: "https://www.github.com/kelechukwu1/abeg-help",
+			github_link: "https://github.com/kelechukwu1/abeg-help",
 			live_link: "https://github.com/abeg-help",
 			description:
 				"This is a community project I'm participating actively on currently, we are solving issues with fund raising in Nigeria",
@@ -129,7 +129,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.flight-reservation-system.vercel.app"}
+									href={"https://flight-reservation-system.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
@@ -177,7 +177,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.getlinked-ai-psi.vercel.app"}
+									href={"https://getlinked-ai-psi.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
@@ -253,7 +253,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.remote-mobile-fix.vercel.app"}
+									href={"https://remote-mobile-fix.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
@@ -288,7 +288,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.github.com/kelechukwu1/abeg-help"}
+									href={"https://github.com/kelechukwu1/abeg-help"}
 								>
 									<AiOutlineGithub className="text-3xl text-gray-200" />
 								</Link>
