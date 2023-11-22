@@ -366,7 +366,7 @@ const Projects = () => {
 												// onMouseLeave={() => projectCursor()}
 												rel="noopener noreferrer"
 												target="_blank"
-												href={"https://www.github.com/kelechukwu1"}
+												href={project.github_link}
 											>
 												<AiOutlineGithub className="text-3xl text-gray-200" />
 											</Link>
@@ -377,9 +377,7 @@ const Projects = () => {
 												// onMouseLeave={() => projectCursor()}
 												rel="noopener noreferrer"
 												target="_blank"
-												href={
-													"https://www.flight-reservation-system.vercel.app"
-												}
+												href={project.live_link}
 											>
 												<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 											</Link>
