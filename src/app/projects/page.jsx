@@ -129,7 +129,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://flight-reservation-system.vercel.app"}
+									href={"https://flight-reservation-project.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
