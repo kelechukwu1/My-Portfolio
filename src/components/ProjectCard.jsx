@@ -113,7 +113,7 @@ const ProjectCard = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.getlinked-ai-psi.vercel.app"}
+									href={"https://getlinked-ai-psi.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
@@ -156,7 +156,7 @@ const ProjectCard = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.remote-mobile-fix.vercel.app"}
+									href={"https://remote-mobile-fix.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>

@@ -299,7 +299,7 @@ const Projects = () => {
 									// onMouseLeave={() => projectCursor()}
 									rel="noopener noreferrer"
 									target="_blank"
-									href={"https://www.abeg-help.vercel.app"}
+									href={"https://abeg-help.vercel.app"}
 								>
 									<HiArrowTopRightOnSquare className="text-3xl text-gray-200" />
 								</Link>
