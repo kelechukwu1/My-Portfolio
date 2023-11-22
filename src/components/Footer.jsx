@@ -11,12 +11,12 @@ const Footer = () => {
 		{
 			name: "Twitter",
 			icon: <RiTwitterXLine className="w-7 md:w-8 h-7 md:h-8" />,
-			url: "",
+			url: "https://twitter.com/kelechukwu_1",
 		},
 		{
 			name: "LinkedIn",
 			icon: <RiLinkedinLine className="w-7 md:w-8 h-7 md:h-8" />,
-			url: "",
+			url: "https://linkedin.com/in/kelechukwu-ikechukwu-9b7615225",
 		},
 		{
 			name: "Github",
@@ -26,7 +26,7 @@ const Footer = () => {
 		{
 			name: "WhatsApp",
 			icon: <RiWhatsappLine className="w-7 md:w-8 h-7 md:h-8" />,
-			url: "",
+			url: "whatsapp://send?text=Hello Kelechukwu, I'm reaching out from your portfolio website&phone=+2349063646331",
 		},
 	];
 	return (

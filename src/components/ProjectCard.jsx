@@ -34,7 +34,7 @@ const ProjectCard = () => {
 			github_link: "https://github.com/kelechukwu1/getlinkedAI",
 			live_link: "https://www.getlinked-ai-psi.vercel.app",
 			description:
-				"A 5-days hackathon project I participated, built and completed with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
+				"A 5-days hackathon project I participated, built and completed together with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
 		},
 
 		{

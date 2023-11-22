@@ -32,27 +32,37 @@ body {
 		rgb(var(--background-end-rgb)),
 		rgb(var(--background-start-rgb))
 	);
-	font-family: "Poppins", "clash-display", sans-serif;
+	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
 	scroll-padding-top: 0px;
 	scroll-behavior: smooth;
-	font-family: "clash-display", sans-serif;
+}
+
+/* Additional CSS for large screens */
+@media screen and (min-width: 1024px) {
+	body {
+		background-size: 100% 100%;
+	}
 }
 
 :root {
-	--foreground-rgb: 10, 10, 10;
-	--background-start-rgb: 160, 165, 166;
-	--background-end-rgb: 200, 200, 200;
+	--bg-color-light: #202020;
+	--bg-color-dark: #202020;
+	--text-color-light: #ffffff;
+	--text-color-dark: #ffffff;
 }
-:root {
-	font-family: "Poppins", "clash-display", sans-serif;
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--bg-color-light);
+		color: var(--text-color-light);
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 250, 250, 250;
-		--background-start-rgb: 20, 20, 20;
-		--background-end-rgb: 20, 20, 20;
+	body {
+		background-color: var(--bg-color-dark);
+		color: var(--text-color-dark);
 	}
 }
 
@@ -83,12 +93,5 @@ body {
 
 	to {
 		rotate: 360deg;
-	}
-}
-
-/* Additional CSS for large screens */
-@media screen and (min-width: 1024px) {
-	body {
-		background-size: 100% 100%;
 	}
 }

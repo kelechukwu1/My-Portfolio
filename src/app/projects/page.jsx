@@ -25,7 +25,7 @@ const Projects = () => {
 			tools: "NextJs, TailwindCss, Redux Toolkit, Firebase",
 			image: "/getlinked.png",
 			github_link: "https://github.com/kelechukwu1/flight-reservation-website",
-			live_link: "https://www.flight-reservation-project.vercel.app",
+			live_link: "https://flight-reservation-project.vercel.app",
 			description:
 				"This is a web application which allows users to book and pay for thier flights seemlessly.",
 		},
@@ -35,9 +35,9 @@ const Projects = () => {
 			tools: "NextJs, TailwindCss, GSAP, AOS.js",
 			image: "/getlinked.png",
 			github_link: "https://github.com/kelechukwu1/getlinkedAI",
-			live_link: "https://www.getlinked-ai-psi.vercel.app",
+			live_link: "https://getlinked-ai-psi.vercel.app",
 			description:
-				"A 5-days hackathon project I participated, built and completed with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
+				"A 5-days hackathon project I participated, built and completed together with Ayoola my good friend, we ensured maximum responsiveness and built beautiful components and pages, also played around with getLinkedAI API",
 		},
 		{
 			id: 3,
@@ -47,7 +47,7 @@ const Projects = () => {
 			github_link: "https://github.com/kelechukwu1/remote-mobile-fix",
 			description:
 				"This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
-			live_link: "https://www.remote-mobile-fix.vercel.app",
+			live_link: "https://remote-mobile-fix.vercel.app",
 		},
 
 		{
@@ -56,9 +56,9 @@ const Projects = () => {
 			tools: "NextJs, TailwindCss",
 			image: "/getlinked.png",
 			github_link: "https://www.github.com/kelechukwu1/abeg-help",
-			live_link: "https://www.abeg-help.vercel.app",
+			live_link: "https://github.com/abeg-help",
 			description:
-				"This is a community project I'm participating actively on currently to solve issues with fund raising in Nigeria",
+				"This is a community project I'm participating actively on currently, we are solving issues with fund raising in Nigeria",
 		},
 	];
 
