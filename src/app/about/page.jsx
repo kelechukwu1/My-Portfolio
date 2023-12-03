@@ -21,7 +21,7 @@ const About = () => {
 		<>
 			<div className="h-full px-4 md:px-24 lg:pb-10 lg:pt-5 flex items-center">
 				<div className="hidden lg:block">
-					<div className="lg:grid lg:grid-cols-2 lg:gap-20 items-center mb-28">
+					<div className="lg:grid lg:grid-cols-2 lg:gap-20 items-center mb-28 w-full justify-between">
 						<div data-aos="fade-right" className="text-gray-300 space-y-10">
 							<div className="font flex text-center justify-start lg:text-5xl xl:text-6xl font-black">
 								<SpringyText text="Kelechukwu I.O" />
@@ -35,7 +35,7 @@ const About = () => {
 							<div className="grid grid-cols-2 gap-4 justify-around">
 								<Link
 									href={
-										"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
+										"https://docs.google.com/document/d/1TBV8IbC8wgMMTmp7_FV_SlJdZ1zNiZZpjAlxJSO98yY/edit?usp=drive_link"
 									}
 									download
 								>
@@ -57,7 +57,7 @@ const About = () => {
 							</div>
 						</div>
 
-						<div data-aos="fade-left">
+						<div data-aos="fade-left" className="flex justify-center items-end">
 							<Image
 								src={"/KC.jpeg"}
 								width={500}
@@ -109,8 +109,8 @@ const About = () => {
 									to <span className="font-semibold"> phone repairers</span>{" "}
 									within Owerri, Imo State, Nigeria. And to make phone repairers
 									who don't own a physical shop to still meet and retain
-									customers who can trust their online portfolio to have thier
-									phones fixed and delivered to thier door step.
+									customers who can trust their online portfolio to have their
+									phones fixed and delivered to their door step.
 								</div>
 
 								<div
@@ -148,7 +148,7 @@ const About = () => {
 					<div className="grid grid-cols-2 gap-4 justify-around mb-10">
 						<Link
 							href={
-								"https://drive.google.com/file/d/13totF7IsI0a1ZiI80c20sovjmm6mhjCt/view?usp=drivesdk"
+								"https://docs.google.com/document/d/1TBV8IbC8wgMMTmp7_FV_SlJdZ1zNiZZpjAlxJSO98yY/edit?usp=drive_link"
 							}
 							download
 						>
@@ -212,8 +212,8 @@ const About = () => {
 						<span className="font-semibold"> phone repairers</span> within
 						Owerri, Imo State, Nigeria. And to make phone repairers who don't
 						own a physical shop to still meet and retain customers who can trust
-						their online portfolio to have thier phones fixed and delivered to
-						thier door step.
+						their online portfolio to have their phones fixed and delivered to
+						their door step.
 					</div>
 
 					<div
