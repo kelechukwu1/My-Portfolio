@@ -119,13 +119,13 @@ const About = () => {
                 >
                   <div className="font font-semibold">What I work with:</div>
                   <div>
-                    <span className="font font-semibold">Languages:</span>{" "}
-                    Html,Css, Javascript, Typescript
+                    <span className="font font-semibold">Languages:</span> Html,
+                    Css, Javascript, Typescript
                   </div>
                   <div>
                     <span className="font font-semibold">Technologies:</span>{" "}
-                    React.js, NextJs, Tailwind, Bootstrap, Redux-toolkit,
-                    Firebase, Git, Vercel, Netlify
+                    ReactJs, NextJs, Tailwindcss, Bootstrap, Redux-toolkit,
+                    Firebase, Postman, Jest, Git, Vercel, Netlify
                   </div>
                 </div>
               </div>
