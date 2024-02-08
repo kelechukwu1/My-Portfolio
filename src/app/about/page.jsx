@@ -19,7 +19,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="h-full lg:pb-10 lg:pt-5 flex items-center">
+      <div className="h-full lg:pb-10 lg:pt-5 flex items-center overflow-x-hidden">
         <div className="hidden lg:block">
           <div className="lg:grid lg:grid-cols-2 lg:gap-20 items-center mb-28 w-full justify-between">
             <div data-aos="fade-right" className="text-gray-300 space-y-10">

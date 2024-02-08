@@ -80,7 +80,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="md:mb-10 items-center">
+    <div className="md:mb-10 items-center overflow-x-hidden">
       <div data-aos="fade-down" className="mb-16">
         <div className="font justify-start mt-5 text-3xl md:text-4xl lg:text-5xl font-black md:text-start">
           <SpringyText text="My Projects" />

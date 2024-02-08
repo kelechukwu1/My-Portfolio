@@ -2,7 +2,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
-import Head from "next/head";
 
 const poppins = Poppins({
   weight: "400",
@@ -21,13 +20,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" description={metadata.description} />
-        <link rel="icon" href="/public/KC.jpeg" />
-        <link rel="apple-touch-icon" href="/public/KC.jpeg" />
-      </Head>
       <body
         className={`${poppins.className} w-[90%] mx-auto lg:w-[80%] xl:w-[85%] 2xl:w-[65%]`}
       >
