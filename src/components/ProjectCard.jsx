@@ -50,7 +50,7 @@ const ProjectCard = () => {
   ];
 
   return (
-    <div className="mb-10 md:py-24 items-center">
+    <div className="mb-10 md:py-24 items-center overflow-y-hidden">
       <div className="mb-10">
         <div className="font flex mt-16 text-3xl md:text-4xl lg:text-5xl text-center justify-center lg:text-start lg:justify-start font-black">
           <SpringyText text="My Projects" />

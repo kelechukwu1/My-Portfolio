@@ -211,7 +211,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-right" className="justify-end">
+          <div data-aos="fade-left" className="justify-end">
             <Image
               src={"/geegpay.png"}
               alt={"project screenshot"}
