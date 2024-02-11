@@ -3,7 +3,7 @@ import SpringyText from "./springy-text/SpringyText";
 
 const Greeting = () => {
   return (
-    <div className="my-5 md:my-10 text-gray-300 lg:hidden overflow-y-hidden">
+    <div className="my-5 md:my-10 text-gray-300 lg:hidden overflow-y-hidden overflow-x-hidden">
       <div className="flex font text-center justify-center text-[1.3rem] md:text-4xl font-bold">
         <SpringyText text="Kelechukwu Ikechukwu O." />
       </div>

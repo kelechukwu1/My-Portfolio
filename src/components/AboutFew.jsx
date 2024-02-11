@@ -29,7 +29,7 @@ const AboutFew = () => {
   }, []);
   return (
     <>
-      <div className="lg:pb-10  flex items-center overflow-y-hidden">
+      <div className="lg:pb-10  flex items-center overflow-y-hidden overflow-x-hidden">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:justify-between">
           <div className="flex justify-center mt-10 md:mt-0 lg:hidden">
             <Image
