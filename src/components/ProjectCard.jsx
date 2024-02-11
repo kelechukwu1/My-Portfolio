@@ -44,7 +44,7 @@ const ProjectCard = () => {
       image: "/remotefix.png",
       github_link: "https://github.com/kelechukwu1/remote-mobile-fix",
       description:
-        "This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
+        "This web app I'm building will enable users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
       live_link: "https://remote-mobile-fix.vercel.app",
     },
   ];

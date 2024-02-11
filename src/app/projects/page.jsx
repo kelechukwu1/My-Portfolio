@@ -60,22 +60,22 @@ const Projects = () => {
     {
       id: 3,
       name: "Remote Mobile Fix",
-      tools: "NextJs, TailwindCss, Redux Toolkit, Firebase",
+      tools: "NextJs, TailwindCss, Redux Toolkit, Firebase, Vercel",
       image: "/remotefix.png",
       github_link: "https://github.com/kelechukwu1/remote-mobile-fix",
       description:
-        "This web app enables users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
+        "This web app I'm building will enable users in Owerri (capital of Imo State, Nigeria) to locate phone repairers close to thier location.",
       live_link: "https://remote-mobile-fix.vercel.app",
     },
     {
       id: 4,
       name: "Fly Asap",
-      tools: "NextJs, TailwindCss, Redux Toolkit, Firebase",
+      tools: "NextJs, TailwindCss, Redux Toolkit, Firebase, Vercel",
       image: "/getlinked.png",
       github_link: "https://github.com/kelechukwu1/flight-reservation-website",
       live_link: "https://flight-reservation-project.vercel.app",
       description:
-        "This is a web application which allows users to book and pay for thier flights seemlessly.",
+        "This is a web application I'm building will allow users to book and pay for thier flights seemlessly.",
     },
   ];
 
